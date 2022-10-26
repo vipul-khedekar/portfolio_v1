@@ -1,5 +1,23 @@
 {
+  "name": "portfolio_v1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vipul-khedekar/portfolio_v1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vipul-khedekar/portfolio_v1/issues"
+  },
+  "homepage": "https://github.com/vipul-khedekar/portfolio_v1#readme",
   "devDependencies": {
-    "node-scss": "^7.0.3"
+    "node-sass": "^7.0.3"
   }
 }
