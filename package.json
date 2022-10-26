@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "node-sass -w scss/ -o css/ --recursive"
+    "scss-compile": "npx node-sass -o ./styles ./styles/index.scss",
+    "scss-watch": "npm run scss-compile && npx node-sass ./styles/index.scss -wo ./styles"
   },
   "repository": {
     "type": "git",
