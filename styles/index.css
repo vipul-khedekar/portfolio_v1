@@ -21,20 +21,20 @@
   --tooltip-sp: 10;
   --fixed-sp: 20;
   --modal-sp: 30;
-  --largest-font: 2rem;
-  --larger-font: 1.5rem;
-  --large-font: 1.25rem;
-  --big-font: 1.125rem;
+  --humongous-font: 2rem;
+  --largest-font: 1.5rem;
+  --larger-font: 1.25rem;
+  --large-font: 1.125rem;
   --base-font: 0.875rem;
   --small-font: 0.75rem;
   --smaller-font: 0.75rem; }
 
 @media screen and (min-width: 968px) {
   :root {
-    --largest-font: 3rem;
-    --larger-font: 2.25rem;
-    --large-font: 1.5rem;
-    --big-font: 1.25rem;
+    --humongous-font: 3rem;
+    --largest-font: 2.25rem;
+    --larger-font: 1.5rem;
+    --large-font: 1.25rem;
     --base-font: 1rem;
     --small-font: 0.875rem;
     --smaller-font: 0.75rem; } }
