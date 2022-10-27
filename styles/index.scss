@@ -1,3 +1,4 @@
+//-------VARIABLES-------
 // GENERAL AND MOBILE SCREEN TYPE
 :root {
   // FONTS FAMILIES
@@ -62,7 +63,7 @@
   }
 }
 
-//RESETTERS & DEFAULTS
+//--------RESETTERS & DEFAULTS--------
 * {
   box-sizing: border-box;
   padding: 0;
@@ -101,4 +102,35 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+//--------LAYOUT & CONTAINERS--------
+.container {
+  max-width: 768px;
+  margin: 0 1.5rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+//--------COMMON--------
+.section {
+  padding: 2rem 0 4rem;
+}
+
+.section__title {
+  font-size: var(--largest-font);
+}
+
+.section__subtitle {
+  display: block;
+  margin-bottom: 3rem;
+  font-size: var(--small-font);
+}
+
+.section__title,
+.section__subtitle {
+  text-align: center;
 }
