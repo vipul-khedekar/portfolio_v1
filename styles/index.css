@@ -1,0 +1,44 @@
+:root {
+  --serious-font: "Roboto Slab", serif;
+  --relaxed-font: "League Spartan", sans-serif;
+  --base-col: #fbe180;
+  --base-col-alt: #fff9c7;
+  --rest-col: #edeae5;
+  --accent-col: #9fedd7;
+  --accent-col-alt: #016670;
+  --text-col-light: #d2d2d2;
+  --text-col-dark: #0a1114;
+  --base-col: #510a32;
+  --base-col-alt: #801336;
+  --rest-col: #2d142c;
+  --accent-col: #ee4540;
+  --accent-col-alt: #c92a42;
+  --text-col-light: #d2d2d2;
+  --text-col-dark: #0a1114;
+  --base-col: #01b9f7;
+  --base-col-alt: #13e5fe;
+  --rest-col: #b8f7ff;
+  --accent-col: #fe61a8;
+  --accent-col-alt: #fe0072;
+  --text-col-light: #d2d2d2;
+  --text-col-dark: #0a1114;
+  --tooltip-sp: 10;
+  --fixed-sp: 20;
+  --modal-sp: 30;
+  --largest-font: 2rem;
+  --larger-font: 1.5rem;
+  --large-font: 1.25rem;
+  --big-font: 1.125rem;
+  --base-font: 0.875rem;
+  --small-font: 0.75rem;
+  --smaller-font: 0.75rem; }
+
+@media screen and (min-width: 968px) {
+  :root {
+    --largest-font: 3rem;
+    --larger-font: 2.25rem;
+    --large-font: 1.5rem;
+    --big-font: 1.25rem;
+    --base-font: 1rem;
+    --small-font: 0.875rem;
+    --smaller-font: 0.75rem; } }
