@@ -80,6 +80,14 @@ img {
   display: grid;
   gap: 1.5rem; }
 
+header {
+  width: 100%;
+  background-color: var(--lt-base-col);
+  position: fixed;
+  z-index: var(--fixed-sp);
+  bottom: 0;
+  left: 0; }
+
 .section {
   padding: 2rem 0 4rem; }
 
@@ -94,3 +102,52 @@ img {
 .section__title,
 .section__subtitle {
   text-align: center; }
+
+.nav {
+  max-width: 968px;
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.nav__logo,
+.nav__toggle {
+  color: var(--lt-accent-col-alt);
+  font-size: 1.25rem;
+  font-weight: 700;
+  cursor: pointer; }
+
+@media screen and (max-width: 767px) {
+  .nav__menu {
+    width: 100%;
+    background-color: var(--lt-base-col);
+    padding: 2rem 1.5rem 4rem;
+    border-radius: 1.5rem 1.5rem 0 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+    transition: 0.3s; } }
+
+.nav__list {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem; }
+
+.nav__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--lt-accent-col-alt);
+  font-size: var(--small-font);
+  font-weight: 700; }
+
+.nav__icon {
+  font-size: 1.125rem; }
+
+.nav__close {
+  position: absolute;
+  right: 1.25rem;
+  bottom: 0.5rem;
+  color: var(--lt-accent-col-alt);
+  font-size: 1.5rem;
+  cursor: pointer; }
