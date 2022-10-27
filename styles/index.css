@@ -1,25 +1,21 @@
 :root {
   --serious-font: "Roboto Slab", serif;
   --relaxed-font: "League Spartan", sans-serif;
-  --base-col: #fbe180;
-  --base-col-alt: #fff9c7;
-  --rest-col: #edeae5;
-  --accent-col: #9fedd7;
-  --accent-col-alt: #016670;
-  --text-col-light: #d2d2d2;
-  --text-col-dark: #0a1114;
-  --base-col: #510a32;
-  --base-col-alt: #801336;
-  --rest-col: #2d142c;
-  --accent-col: #ee4540;
-  --accent-col-alt: #c92a42;
-  --text-col-light: #d2d2d2;
-  --text-col-dark: #0a1114;
-  --base-col: #01b9f7;
-  --base-col-alt: #13e5fe;
-  --rest-col: #b8f7ff;
-  --accent-col: #fe61a8;
-  --accent-col-alt: #fe0072;
+  --lt-base-col: #fbe180;
+  --lt-base-col-alt: #fff9c7;
+  --lt-rest-col: #edeae5;
+  --lt-accent-col: #9fedd7;
+  --lt-accent-col-alt: #016670;
+  --dt-base-col: #510a32;
+  --dt-base-col-alt: #801336;
+  --dt-rest-col: #2d142c;
+  --dt-accent-col: #ee4540;
+  --dt-accent-col-alt: #c92a42;
+  --et-base-col: #01b9f7;
+  --et-base-col-alt: #13e5fe;
+  --et-rest-col: #b8f7ff;
+  --et-accent-col: #fe61a8;
+  --et-accent-col-alt: #fe0072;
   --text-col-light: #d2d2d2;
   --text-col-dark: #0a1114;
   --tooltip-sp: 10;
@@ -42,3 +38,36 @@
     --base-font: 1rem;
     --small-font: 0.875rem;
     --smaller-font: 0.75rem; } }
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  background-color: var(--lt-rest-col);
+  margin: 0 0 3rem 0;
+  color: var(--text-col-dark);
+  font-family: var(--relaxed-font);
+  font-size: var(--base-font);
+  font-weight: 400; }
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--text-col-dark);
+  font-weight: 700; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+img {
+  max-width: 100%;
+  height: auto; }
