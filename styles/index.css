@@ -227,5 +227,19 @@ header {
 .home__scroll-arrow {
   font-size: 1.25rem; }
 
+.about__image {
+  width: 200px;
+  justify-self: center;
+  align-self: center;
+  border-radius: 0.5rem; }
+
+.about__description {
+  margin-bottom: 2.5rem;
+  text-align: center; }
+
+.about__button {
+  display: flex;
+  justify-content: center; }
+
 .show-menu {
   bottom: 0; }
