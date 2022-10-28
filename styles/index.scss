@@ -144,6 +144,26 @@ header {
   text-align: center;
 }
 
+.button {
+  background-color: var(--lt-accent-col-alt);
+  display: inline-block;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: var(--text-col-light);
+  font-weight: 700;
+}
+
+.button__icon {
+  margin-right: 0.5rem;
+  font-size: 1.25rem;
+  transition: 0.3s;
+}
+
+.button--flex {
+  display: inline-flex;
+  align-items: center;
+}
+
 //------------------------
 .nav {
   max-width: 968px;
@@ -277,26 +297,6 @@ header {
 
 .home__scroll-arrow {
   font-size: 1.25rem;
-}
-
-.button {
-  background-color: var(--lt-accent-col-alt);
-  display: inline-block;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  color: var(--text-col-light);
-  font-weight: 700;
-}
-
-.button__icon {
-  margin-right: 0.5rem;
-  font-size: 1.25rem;
-  transition: 0.3s;
-}
-
-.button--flex {
-  display: inline-flex;
-  align-items: center;
 }
 
 //--------FUNCTIONALITY--------
