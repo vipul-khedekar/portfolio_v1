@@ -125,22 +125,22 @@ header {
 }
 
 //--------COMMON--------
-.section {
+.page {
   padding: 2rem 0 4rem;
 }
 
-.section__title {
+.page__title {
   font-size: var(--largest-font);
 }
 
-.section__subtitle {
+.page__subtitle {
   display: block;
   margin-bottom: 3rem;
   font-size: var(--small-font);
 }
 
-.section__title,
-.section__subtitle {
+.page__title,
+.page__subtitle {
   text-align: center;
 }
 
