@@ -168,7 +168,7 @@ header {
     padding: 2rem 1.5rem 4rem;
     border-radius: 1.5rem 1.5rem 0 0;
     position: fixed;
-    bottom: 0;
+    bottom: -100%;
     left: 0;
     box-shadow: 0 -1px 4px rgba($color: #000000, $alpha: 0.15);
     transition: 0.3s;
@@ -200,4 +200,9 @@ header {
   color: var(--lt-accent-col-alt);
   font-size: 1.5rem;
   cursor: pointer;
+}
+
+//--------FUNCTIONALITY--------
+.show-menu {
+  bottom: 0;
 }
