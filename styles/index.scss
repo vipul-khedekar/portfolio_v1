@@ -316,6 +316,33 @@ header {
   justify-content: center;
 }
 
+.portfolio__container {
+  overflow: initial;
+}
+
+.portfolio__content {
+  padding: 0 1.5rem;
+}
+
+.portfolio__image {
+  width: 265px;
+  justify-self: center;
+  border-radius: 0.5rem;
+}
+
+.portfolio__title {
+  margin-bottom: 0.5rem;
+  font-size: var(--larger-font);
+}
+
+.portfolio__description {
+  margin-bottom: 0.75rem;
+}
+
+.portfolio__button:hover .button__icon {
+  scale: 120%;
+}
+
 //--------FUNCTIONALITY--------
 .show-menu {
   bottom: 0;
