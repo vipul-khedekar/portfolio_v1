@@ -164,6 +164,17 @@ header {
   align-items: center;
 }
 
+.button--small {
+  padding: 0.75rem 1rem;
+}
+
+.button--link {
+  background-color: transparent;
+  padding: 0;
+  color: var(--lt-accent-col-alt);
+  cursor: pointer;
+}
+
 //------------------------
 .nav {
   max-width: 968px;
@@ -337,6 +348,95 @@ header {
 
 .portfolio__button:hover .button__icon {
   scale: 120%;
+}
+
+.specialization__container {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.specialization__content {
+  background-color: var(--lt-accent-col);
+  padding: 3rem 1rem;
+  border-radius: 0.5rem;
+  position: relative;
+  box-shadow: 0 2px 4px #00000020;
+  transition: 0.3s;
+}
+
+.specialization__icon {
+  display: block;
+  margin-bottom: 1rem;
+  color: var(--lt-accent-col-alt);
+  font-size: 2rem;
+}
+
+.specialization__title {
+  margin-bottom: 1rem;
+  font-size: var(--largest-font);
+  font-weight: 700;
+}
+
+.specialization__button {
+  font-size: var(--small-font);
+  cursor: pointer;
+}
+
+.specialization__button:hover .button__icon {
+  transform: translateX(0.25rem);
+}
+
+.specialization__modal {
+  background-color: #00000065;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  position: fixed;
+  z-index: var(--modal-sp);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.specialization__modal-content {
+  height: auto;
+  width: 300px;
+  background-color: var(--lt-rest-col);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  position: relative;
+}
+
+.specialization__modal-bullets {
+  row-gap: 1rem;
+}
+
+.specialization__modal-bullet {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.specialization__modal-title {
+  margin-bottom: 1.5rem;
+  font-size: var(--larger-font);
+  font-weight: 700;
+}
+
+.specialization__modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: var(--text-col-dark);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.specialization__modal-icon {
+  color: var(--lt-accent-col-alt);
 }
 
 .contact__container {
