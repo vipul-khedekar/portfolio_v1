@@ -12,7 +12,7 @@
     </style>
 
     <link href="./styles/index.css" rel="stylesheet" type="text/css">
-    <script src="./client/index.js" defer></script>
+    <script src="./client/index.js" type="module" defer></script>
 
     <title>Document</title>
 </head>
@@ -171,9 +171,9 @@
             <h2 class="page__title">Portfolio</h2>
             <span class="page__subtitle">Projects that I have built</span>
 
-            <section class="portfolio__container container">
-                <section>
-                    <div class="portfolio__content grid">
+            <section class="slider__container portfolio__container container">
+                <section data-slider-wrapper class="slider__slides">
+                    <div data-slider-slides class="portfolio__content grid">
                         <img class="portfolio__image" src="./assets/img/place-holder.png" alt="project">
 
                         <section class="portfolio__data">
@@ -194,7 +194,7 @@
                         </section>
                     </div>
 
-                    <div class="portfolio__content grid">
+                    <div data-slider-slides class="portfolio__content grid">
                         <img class="portfolio__image" src="./assets/img/place-holder.png" alt="project">
 
                         <section class="portfolio__data">
@@ -215,7 +215,7 @@
                         </section>
                     </div>
 
-                    <div class="portfolio__content grid">
+                    <div data-slider-slides class="portfolio__content grid">
                         <img class="portfolio__image" src="./assets/img/place-holder.png" alt="project">
 
                         <section class="portfolio__data">
@@ -236,7 +236,7 @@
                         </section>
                     </div>
 
-                    <div class="portfolio__content grid">
+                    <div data-slider-slides class="portfolio__content grid">
                         <img class="portfolio__image" src="./assets/img/place-holder.png" alt="project">
 
                         <section class="portfolio__data">
@@ -257,6 +257,10 @@
                         </section>
                     </div>
                 </section>
+
+                <button data-slider-prev class="slider__prev">Prev</button>
+
+                <button data-slider-next class="slider__next">Next</button>
         </article>
     </main>
 </body>

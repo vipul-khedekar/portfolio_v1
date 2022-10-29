@@ -316,9 +316,9 @@ header {
   justify-content: center;
 }
 
-.portfolio__container {
-  overflow: initial;
-}
+// .portfolio__container {
+//   overflow: initial;
+// }
 
 .portfolio__content {
   padding: 0 1.5rem;
@@ -346,4 +346,13 @@ header {
 //--------FUNCTIONALITY--------
 .show-menu {
   bottom: 0;
+}
+
+.slider__container {
+  overflow: hidden;
+}
+
+.slider__slides {
+  display: grid;
+  grid-template-columns: repeat(4, 100%);
 }
