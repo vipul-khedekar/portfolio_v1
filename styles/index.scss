@@ -382,6 +382,47 @@ header {
   font-size: 2rem;
 }
 
+.footer {
+  background-color: var(--lt-base-col-alt);
+  padding: 1.5rem 0;
+}
+
+.footer__container {
+  row-gap: 1.5rem;
+}
+
+.footer__options {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: large;
+}
+
+.footer__link {
+  color: var(--lt-accent-col-alt);
+}
+
+.footer__socials {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.25rem;
+}
+
+.footer__icon {
+  color: var(--lt-accent-col-alt);
+}
+
+.footer__copyright,
+.footer__message {
+  text-align: center;
+}
+
 //--------FUNCTIONALITY--------
 .show-menu {
   bottom: 0;
