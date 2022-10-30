@@ -18,42 +18,51 @@
 </head>
 
 <body>
+    <!-- Header Area -->
     <header header class="header">
         <nav class="nav container">
+            <!-- Header Logo -->
             <a class="nav__logo" href="#">Vipul</a>
 
+            <!-- Header Menu List -->
             <section data-nav-menu class="nav__menu">
                 <ul class="nav__list grid">
+                    <!-- Header Menu Item - Home -->
                     <li class="nav__item">
                         <a data-nav-link class="nav__link" href="#home">
                             <i class="nav__icon uil uil-estate"></i> Home
                         </a>
                     </li>
 
+                    <!-- Header Menu Item - About -->
                     <li class="nav__item">
                         <a data-nav-link class="nav__link" href="#about">
                             <i class="nav__icon uil uil-user"></i> About
                         </a>
                     </li>
 
+                    <!-- Header Menu Item - Portfolio -->
                     <li class="nav__item">
                         <a data-nav-link class="nav__link" href="#portfolio">
                             <i class="nav__icon uil uil-rocket"></i> Portfolio
                         </a>
                     </li>
 
+                    <!-- Header Menu Item - Skillset -->
                     <li class="nav__item">
                         <a data-nav-link class="nav__link" href="#skillset">
                             <i class="nav__icon uil uil-fire"></i> Skillset
                         </a>
                     </li>
 
+                    <!-- Header Menu Item - Specialization -->
                     <li class="nav__item">
                         <a data-nav-link class="nav__link" href="#specialization">
                             <i class="nav__icon uil uil-plane-fly"></i> Specialization
                         </a>
                     </li>
 
+                    <!-- Header Menu Item - Contact -->
                     <li class="nav__item">
                         <a data-nav-link class="nav__link" href="#contact">
                             <i class="nav__icon uil uil-message"></i> Contact
@@ -61,9 +70,11 @@
                     </li>
                 </ul>
 
+                <!-- Header Menu List Close -->
                 <i data-nav-close class="nav__close uil uil-times"></i>
             </section>
 
+            <!-- Header Menu List Open -->
             <section class="nav_buttons">
                 <div data-nav-toggle class="nav__toggle">
                     <i class="uil uil-apps"></i>
@@ -72,24 +83,32 @@
         </nav>
     </header>
 
+    <!-- Main Areas -->
     <main class="main">
+        <!-- Home Page -->
         <article data-home class="home page" id="home">
             <section class="home__container container grid">
+                <!-- Home Sections -->
                 <section class="home__content grid">
+                    <!-- Home Social List -->
                     <section class="home__social">
+                        <!-- Home Social Item - Linkedin -->
                         <a class="home__social-icon" href="#" target="_blank">
                             <i class="uil uil-linkedin-alt"></i>
                         </a>
 
+                        <!-- Home Social Item - Github -->
                         <a class="home__social-icon" href="#" target="_blank">
                             <i class="uil uil-github-alt"></i>
                         </a>
 
+                        <!-- Home Social Item - Email -->
                         <a class="home__social-icon" href="#" target="_blank">
                             <i class="uil uil-envelope-add"></i>
                         </a>
                     </section>
 
+                    <!-- Home Hero Image -->
                     <section class="home__image">
                         <svg class="home__backdrop" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -112,6 +131,7 @@
                         </svg>
                     </section>
 
+                    <!-- Home Hero Information -->
                     <section class="home__data">
                         <h1 class="home__title">Hi, I'm Vipul Khedekar</h1>
 
@@ -127,6 +147,7 @@
                     </section>
                 </section>
 
+                <!-- Home Scroll Instruction -->
                 <section class="home__scroll">
                     <a class="home__scroll-button button--flex" href="#about">
                         <i class="home__scroll-mouse uil uil-mouse-alt"></i>
@@ -137,18 +158,24 @@
             </section>
         </article>
 
+        <!-- About Page -->
         <article data-about class="about page" id="about">
+            <!-- About Header -->
             <h2 class="page__title">About Me</h2>
             <span class="page__subtitle">My Introduction</span>
 
+            <!-- About Sections -->
             <section class="about__container container grid">
+                <!-- About Image -->
                 <img class="about__image" src="./assets/img/place-holder.png" alt="about-pic">
 
+                <!-- About Summery -->
                 <section class="about__data">
                     <p class="about__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
                         ullam officiis ut minima quasi, facilis natus quidem illum temporibus, amet iusto. Repellat,
                         nulla? Totam, fugiat unde repudiandae dicta blanditiis nisi.</p>
 
+                    <!-- About Contacts Redirect -->
                     <section class="about__button">
                         <a class="button button--flex" href="#resume" download>
                             <i class="button__icon uil uil-download-alt"></i> Download Resumé
@@ -158,24 +185,34 @@
             </section>
         </article>
 
+        <!-- Skillset Page -->
         <article class="skillset page" id="skillset">
+            <!-- Skillset Header -->
             <h2 class="page__title">Skillset</h2>
             <span class="page__subtitle">Technologies I've worked with:</span>
 
+            <!-- Skillset Skill list -->
             <section class="skillset__container container grid">
                 <!-- All logos of tech and qualifications -->
             </section>
         </article>
 
+        <!-- Portfolio Page -->
         <article class="portfolio page" id="portfolio">
+            <!-- Portfolio Header -->
             <h2 class="page__title">Portfolio</h2>
             <span class="page__subtitle">Projects that I have built</span>
 
+            <!-- Portfolio Slider -->
             <section class="slider__container portfolio__container container">
+                <!-- Portfolio Slider - Wrapper, Project List -->
                 <section data-slider-wrapper class="slider__wrapper">
+                    <!-- Portfolio Project 1 -->
                     <div data-slider-slides class="portfolio__content grid">
+                        <!-- Project Image -->
                         <img class="portfolio__image" src="./assets/img/place-holder.png" alt="project">
 
+                        <!-- Project Information -->
                         <section class="portfolio__data">
                             <h3 class="portfolio__title">Project 1</h3>
 
@@ -184,19 +221,24 @@
                                 quasi nemo vero. Voluptatum molestiae eveniet exercitationem iusto, architecto
                                 cupiditate impedit?</p>
 
+                            <!-- Live Demo Redirect -->
                             <a class="portfolio__button button button--flex button--small" href="#">
                                 <i class="button__icon uil uil-bolt"></i> Live Demo
                             </a>
 
+                            <!-- Source Code Redirect -->
                             <a class="portfolio__button button button--flex button--small" href="#">
                                 <i class="button__icon uil uil-brackets-curly"></i> Source Code
                             </a>
                         </section>
                     </div>
 
+                    <!-- Portfolio Project 2 -->
                     <div data-slider-slides class="portfolio__content grid">
+                        <!-- Project Image -->
                         <img class="portfolio__image" src="./assets/img/place-holder.png" alt="project">
 
+                        <!-- Project Data -->
                         <section class="portfolio__data">
                             <h3 class="portfolio__title">Project 2</h3>
 
@@ -205,19 +247,24 @@
                                 quasi nemo vero. Voluptatum molestiae eveniet exercitationem iusto, architecto
                                 cupiditate impedit?</p>
 
+                            <!-- Live Demo Redirect -->
                             <a class="portfolio__button button button--flex button--small" href="#">
                                 <i class="button__icon uil uil-bolt"></i> Live Demo
                             </a>
 
+                            <!-- Source Code Redirect -->
                             <a class="portfolio__button button button--flex button--small" href="#">
                                 <i class="button__icon uil uil-brackets-curly"></i> Source Code
                             </a>
                         </section>
                     </div>
 
+                    <!-- Portfolio Project 3 -->
                     <div data-slider-slides class="portfolio__content grid">
+                        <!-- Project Image -->
                         <img class="portfolio__image" src="./assets/img/place-holder.png" alt="project">
 
+                        <!-- Project Information -->
                         <section class="portfolio__data">
                             <h3 class="portfolio__title">Project 3</h3>
 
@@ -226,19 +273,24 @@
                                 quasi nemo vero. Voluptatum molestiae eveniet exercitationem iusto, architecto
                                 cupiditate impedit?</p>
 
+                            <!-- Live Demo Redirect -->
                             <a class="portfolio__button button button--flex button--small" href="#">
                                 <i class="button__icon uil uil-bolt"></i> Live Demo
                             </a>
 
+                            <!-- Source Code -->
                             <a class="portfolio__button button button--flex button--small" href="#">
                                 <i class="button__icon uil uil-brackets-curly"></i> Source Code
                             </a>
                         </section>
                     </div>
 
+                    <!-- Portfolio Project 4 -->
                     <div data-slider-slides class="portfolio__content grid">
+                        <!-- Project Image -->
                         <img class="portfolio__image" src="./assets/img/place-holder.png" alt="project">
 
+                        <!-- Project Information -->
                         <section class="portfolio__data">
                             <h3 class="portfolio__title">Project 4</h3>
 
@@ -247,10 +299,12 @@
                                 quasi nemo vero. Voluptatum molestiae eveniet exercitationem iusto, architecto
                                 cupiditate impedit?</p>
 
+                            <!-- Live Demo Redirect -->
                             <a class="portfolio__button button button--flex button--small" href="#">
                                 <i class="button__icon uil uil-bolt"></i> Live Demo
                             </a>
 
+                            <!-- Source Code Redirect -->
                             <a class="portfolio__button button button--flex button--small" href="#">
                                 <i class="button__icon uil uil-brackets-curly"></i> Source Code
                             </a>
@@ -258,56 +312,71 @@
                     </div>
                 </section>
 
+                <!-- Portfolio Slider - Previous Button -->
                 <button data-slider-prev class="slider__prev">
                     <i class="uil uil-angle-double-left"></i>
                 </button>
 
+                <!-- Portfolio Slider - Next Button -->
                 <button data-slider-next class="slider__next">
                     <i class="uil uil-angle-double-right"></i>
                 </button>
+            </section>
         </article>
 
+        <!-- Specializations Page -->
         <article class="specialization page" id="specialization">
+            <!-- Specialization Header -->
             <h2 class="page__title">Specializations</h2>
             <span class="page__subtitle">What I do and good at</span>
 
+            <!-- Specialization List -->
             <section class="specialization__container container grid">
+                <!-- Specialization Item - Profession -->
                 <section class="specialization__content">
+                    <!-- Profession Header -->
                     <div>
                         <i class="specialization__icon uil uil-arrow"></i>
 
                         <h3 class="specialization__title">Frontend <br> Developer</h3>
                     </div>
 
+                    <!-- Profession Open Modal -->
                     <p data-specialization-modal-open
                         class="specialization__button button button--flex button--small button--link">Know More...
                         <i class="button__icon uil uil-angle-double-right"></i>
                     </p>
 
+                    <!-- Profession Modal -->
                     <section data-specialization-modal class="specialization__modal">
                         <section class="specialization__modal-content">
                             <h4 class="specialization__modal-title">Frontend <br> Developer</h4>
                             <i data-specialization-modal-close class="specialization__modal-close uil uil-times"></i>
 
+                            <!-- Profession Modal Bullets -->
                             <ul class="specialization__modal-bullets grid">
+                                <!-- Profession Bullet 1 -->
                                 <li class="specialization__modal-bullet">
                                     <i class="specialization__modal-icon uil uil-check-circle"></i>
 
                                     <p>Lorem ipsum dolor sit amet.</p>
                                 </li>
 
+                                <!-- Profession Bullet 2 -->
                                 <li class="specialization__modal-bullet">
                                     <i class="specialization__modal-icon uil uil-check-circle"></i>
 
                                     <p>Lorem ipsum dolor sit amet.</p>
                                 </li>
 
+                                <!-- Profession Bullet 3 -->
                                 <li class="specialization__modal-bullet">
                                     <i class="specialization__modal-icon uil uil-check-circle"></i>
 
                                     <p>Lorem ipsum dolor sit amet.</p>
                                 </li>
 
+                                <!-- Profession Bullet 4 -->
                                 <li class="specialization__modal-bullet">
                                     <i class="specialization__modal-icon uil uil-check-circle"></i>
 
@@ -318,42 +387,51 @@
                     </section>
                 </section>
 
+                <!-- Specialization Item - Hobby -->
                 <section class="specialization__content">
+                    <!-- Hobby Header -->
                     <div>
                         <i class="specialization__icon uil uil-palette"></i>
 
                         <h3 class="specialization__title">UI/UX <br> Designer</h3>
                     </div>
 
+                    <!-- Hobby Open Modal -->
                     <p data-specialization-modal-open
                         class="specialization__button button button--flex button--small button--link">Know More...
                         <i class="button__icon uil uil-angle-double-right"></i>
                     </p>
 
+                    <!-- Hobby Modal -->
                     <section data-specialization-modal class="specialization__modal">
                         <section class="specialization__modal-content">
                             <h4 class="specialization__modal-title">UI/UX <br> Designer</h4>
                             <i data-specialization-modal-close class="specialization__modal-close uil uil-times"></i>
 
+                            <!-- Hobby Modal Bullets -->
                             <ul class="specialization__modal-bullets grid">
+                                <!-- Hobby Bullet 1 -->
                                 <li class="specialization__modal-bullet">
                                     <i class="specialization__modal-icon uil uil-check-circle"></i>
 
                                     <p>Lorem ipsum dolor sit amet.</p>
                                 </li>
 
+                                <!-- Hobby Bullet 2 -->
                                 <li class="specialization__modal-bullet">
                                     <i class="specialization__modal-icon uil uil-check-circle"></i>
 
                                     <p>Lorem ipsum dolor sit amet.</p>
                                 </li>
 
+                                <!-- Hobby Bullet 3 -->
                                 <li class="specialization__modal-bullet">
                                     <i class="specialization__modal-icon uil uil-check-circle"></i>
 
                                     <p>Lorem ipsum dolor sit amet.</p>
                                 </li>
 
+                                <!-- Hobby Bullet 4 -->
                                 <li class="specialization__modal-bullet">
                                     <i class="specialization__modal-icon uil uil-check-circle"></i>
 
@@ -366,18 +444,24 @@
             </section>
         </article>
 
+        <!-- Contacts Page -->
         <article class="contact page" id="contact">
+            <!-- Contacts Header -->
             <h2 class="page__title">Contact Me</h2>
 
+            <!-- Contact Form -->
             <section class="contact__container container grid">
                 <form class="contact__form grid" action="">
+                    <!-- Row 1 -->
                     <div class="contact__inputs grid">
+                        <!-- Name Input -->
                         <div class="contact__content">
                             <label class="contact__label" for="name">Name</label>
 
                             <input class="contact__input" type="text" id="name">
                         </div>
 
+                        <!-- Email Input -->
                         <div class="contact__content">
                             <label class="contact__label" for="email">Email</label>
 
@@ -385,12 +469,15 @@
                         </div>
                     </div>
 
+                    <!-- Row 2 -->
                     <div class="contact__content">
+                        <!-- Message Input -->
                         <label class="contact__label" for="message">Message</label>
 
                         <textarea class="contact__input" id="message" name="message" cols="0" rows="7"></textarea>
                     </div>
 
+                    <!-- Form Submit -->
                     <button class="contact__button button--flex" type="submit">
                         Send Message <i class="contact__icon uil uil-fast-mail"></i>
                     </button>
@@ -399,45 +486,57 @@
         </article>
     </main>
 
+    <!-- Footer Area -->
     <footer class="footer">
         <section class="footer__container container grid">
+            <!-- Footer - Page Made By -->
             <p class="footer__message">Made with emoji by Vipul Khedekar, Frontend Developer.</p>
 
+            <!-- Footer Menu -->
             <section class="footer__options">
-
+                <!-- Footer Link List -->
                 <ul class="footer__links">
+                    <!-- Footer Link - Home -->
                     <li>
                         <a class="footer__link" href="#home">Home</a>
                     </li>
 
+                    <!-- Footer Link - Portfolio -->
                     <li>
                         <a class="footer__link" href="#portfolio">Portfolio</a>
                     </li>
 
+                    <!-- Footer Link - Skillset -->
                     <li>
                         <a class="footer__link" href="#skills">Skillset</a>
                     </li>
 
+                    <!-- Footer Link - Contact -->
                     <li>
                         <a class="footer__link" href="#contact">Contact</a>
                     </li>
                 </ul>
 
+                <!-- Footer Social List -->
                 <section class="footer__socials">
+                    <!-- Footer Social - Linkedin -->
                     <a class="footer__social" href="#" target="_blank">
                         <i class="footer__icon uil uil-linkedin"></i>
                     </a>
 
+                    <!-- Footer Social - Github -->
                     <a class="footer__social" href="#" target="_blank">
                         <i class="footer__icon uil uil-github"></i>
                     </a>
 
+                    <!-- Footer Social - Email -->
                     <a class="footer__social" href="#" target="_blank">
                         <i class="footer__icon uil uil-envelope"></i>
                     </a>
                 </section>
             </section>
 
+            <!-- Footer - Copyright -->
             <p class="footer__copyright">© ∞ Vipul Khedekar. All rights reserved.</>
         </section>
     </footer>

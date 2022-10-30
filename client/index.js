@@ -1,4 +1,4 @@
-//ELEMENTS SELECTION
+//---------ELEMENTS SELECTION---------
 const navMenu = document.querySelector(`[data-nav-menu]`);
 const navToggle = document.querySelector(`[data-nav-toggle]`);
 const navClose = document.querySelector(`[data-nav-close]`);
@@ -17,21 +17,23 @@ const specializationModals = document.querySelectorAll(
   `[data-specialization-modal]`
 );
 
-//MENU TOGGLE - MOBILE VIEW
-//queried elements are first validated to avoid undefined/blank
+//---------MENU TOGGLE - MOBILE VIEW---------
+//***queried elements are first validated to avoid undefined/blank
+//open menu
 if (navToggle) {
   navToggle.addEventListener(`click`, () => {
     navMenu.classList.add(`show-menu`);
   });
 }
 
+//close menu
 if (navClose) {
   navClose.addEventListener(`click`, () => {
     navMenu.classList.remove(`show-menu`);
   });
 }
 
-//CLOSE MENU WHEN A LINK IS CLICKED - MOBILE VIEW
+//close menu after link selection
 if (navLink.length) {
   navLink.forEach((link) => {
     link.addEventListener(`click`, () => {
@@ -40,10 +42,13 @@ if (navLink.length) {
   });
 }
 
-//PORTFOLIO SLIDER
+//---------PORTFOLIO SLIDER---------
+//hold slide's index
 let counter = 0;
+//amount for width to shift
 const size = sliderSlides[0].clientWidth;
 
+//previous slide
 if (sliderPrev) {
   sliderPrev.addEventListener(`click`, () => {
     if (counter <= 0) {
@@ -55,6 +60,7 @@ if (sliderPrev) {
   });
 }
 
+//next slide
 if (sliderNext) {
   sliderNext.addEventListener(`click`, () => {
     if (counter >= 3) {
@@ -66,7 +72,8 @@ if (sliderNext) {
   });
 }
 
-//MODAL
+//---------SPECIALIZATION MODAL CONTROLS---------
+//open modal
 if (specializationModalOpen) {
   specializationModalOpen.forEach((button, i) => {
     button.addEventListener(`click`, () => {
@@ -78,6 +85,7 @@ if (specializationModalOpen) {
   });
 }
 
+//close modal
 if (specializationModalClose) {
   specializationModalClose.forEach((button, i) => {
     button.addEventListener(`click`, () => {
