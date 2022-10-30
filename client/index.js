@@ -17,6 +17,8 @@ const specializationModals = document.querySelectorAll(
   `[data-specialization-modal]`
 );
 const scrollUp = document.querySelector(`[data-scrollup]`);
+const themeButton = document.querySelector(`[data-theme-button]`);
+const body = document.querySelector(`body`);
 
 //---------MENU TOGGLE - MOBILE VIEW---------
 //***queried elements are first validated to avoid undefined/blank
@@ -107,3 +109,45 @@ function scrolling() {
 }
 
 window.addEventListener(`scroll`, scrolling);
+
+//---------THEME SELECTION---------
+const darkTheme = `dark-theme`;
+const lightIcon = `uil-sun`;
+
+const selectedTheme = localStorage.getItem(`selected-theme`);
+const selectedIcon = localStorage.getItem(`selected-icon`);
+
+//look for current theme, by if body has class of dark
+function getCurrentTheme() {
+  if (body.classList.contains(darkTheme)) {
+    `dark`;
+  } else {
+    `light`;
+  }
+}
+
+//look for current icon, by which class exists
+function getCurrentIcon() {
+  if (themeButton.classList.contains(lightIcon)) {
+    `uil-moon`;
+  } else {
+    `uil-sun`;
+  }
+}
+
+//if any theme is selected
+if (selectedTheme) {
+  body.classList[selectedTheme === `dark` ? `add` : `remove`](darkTheme);
+  themeButton.classList[selectedIcon === `uil-moon` ? `add` : `remove`](
+    lightIcon
+  );
+}
+
+//manually selected/toggle theme
+themeButton.addEventListener(`click`, () => {
+  body.classList.toggle(darkTheme);
+  themeButton.classList.toggle(lightIcon);
+
+  localStorage.setItem(`selected-theme`, getCurrentTheme());
+  localStorage.setItem(`selected-icon`, getCurrentIcon());
+});
