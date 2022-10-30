@@ -1,40 +1,41 @@
-//-------VARIABLES-------
-// GENERAL AND MOBILE SCREEN TYPE
+//---------VARIABLES---------
+//---------GENERAL AND MOBILE SCREEN TYPE---------
 :root {
-  // FONTS FAMILIES
+  //---------FONTS FAMILIES---------
   --serious-font: "Roboto Slab", serif;
   --relaxed-font: "League Spartan", sans-serif;
 
-  // COLORS - Light Theme
+  //---------COLORS - Light Theme---------
   --lt-base-col: #fbe180;
   --lt-base-col-alt: #fff9c7;
   --lt-rest-col: #edeae5;
   --lt-accent-col: #9fedd7;
   --lt-accent-col-alt: #016670;
 
-  // COLORS - Dark Theme
+  //---------COLORS - Dark Theme---------
   --dt-base-col: #510a32;
   --dt-base-col-alt: #801336;
   --dt-rest-col: #2d142c;
   --dt-accent-col: #ee4540;
   --dt-accent-col-alt: #c92a42;
 
-  // COLORS - Extra Theme
+  //---------COLORS - Extra Theme---------
   --et-base-col: #01b9f7;
   --et-base-col-alt: #13e5fe;
   --et-rest-col: #b8f7ff;
   --et-accent-col: #fe61a8;
   --et-accent-col-alt: #fe0072;
 
+  //---------COLORS - TEXT---------
   --text-col-light: #d2d2d2;
   --text-col-dark: #0a1114;
 
-  // STACK POSITIONS
+  //---------STACK POSITIONS---------
   --tooltip-sp: 10;
   --fixed-sp: 20;
   --modal-sp: 30;
 
-  // FONT SIZES
+  //---------FONT SIZES---------
   --humongous-font: 2rem;
   --largest-font: 1.5rem;
   --larger-font: 1.25rem;
@@ -43,16 +44,16 @@
   --small-font: 0.75rem;
   --smaller-font: 0.75rem;
 
-  // MISC SIZES - from small to large - for reference
-  //font weights: 100, 400, 700
+  //---------MISC SIZES - FROM SMALL TO LARGE - FOR REFERENCE---------
+  //font weights: 100 - thin, 400 - base, 700 - bold
   //spacing: 0.125rem, 0.25rem, 0.5rem, 0.75rem, 0.875rem, 1rem, ...
   //lengths: whole or even numbers in px
 }
 
-// NORMAL DESKTOP SCREEN TYPE
+//---------NORMAL DESKTOP SCREEN TYPE---------
 @media screen and (min-width: 968px) {
   :root {
-    // FONT SIZES
+    //---------FONT SIZES---------
     --humongous-font: 3rem;
     --largest-font: 2.25rem;
     --larger-font: 1.5rem;
@@ -63,7 +64,7 @@
   }
 }
 
-//--------RESETTERS & DEFAULTS--------
+//---------RESETTERS & DEFAULTS---------
 * {
   box-sizing: border-box;
   padding: 0;
@@ -104,7 +105,7 @@ img {
   height: auto;
 }
 
-//--------LAYOUT & CONTAINERS--------
+//---------LAYOUT & CONTAINERS---------
 .container {
   max-width: 768px;
   margin: 0 1.5rem;
@@ -124,7 +125,7 @@ header {
   left: 0;
 }
 
-//--------COMMON--------
+//---------COMMON---------
 .page {
   padding: 2rem 0 4rem;
 }
@@ -175,7 +176,7 @@ header {
   cursor: pointer;
 }
 
-//------------------------
+//------------------
 .nav {
   max-width: 968px;
   height: 3rem;
@@ -540,11 +541,13 @@ header {
   font-size: 1.75rem;
 }
 
-//--------FUNCTIONALITY--------
+//---------FUNCTIONALITY---------
+//mobile menu
 .show-menu {
   bottom: 0;
 }
 
+//slider---v
 .slider__container {
   position: relative;
   overflow: hidden;
@@ -573,7 +576,9 @@ header {
 .slider__next {
   right: 1.5rem;
 }
+//slider---^
 
+//modal---v
 .specialization__modal-active {
   visibility: visible;
 }
@@ -581,7 +586,9 @@ header {
 .specialization__modal-inactive {
   visibility: hidden;
 }
+//modal---^
 
+//scroll to top
 .show-scroll {
   bottom: 5rem;
 }
