@@ -548,6 +548,23 @@ header {
   cursor: pointer;
 }
 
+//---------SCROLLBAR---------
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background-color: var(--base-col-alt);
+  border-radius: 0.25rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--base-col);
+  border-radius: 0.25rem;
+
+  &:hover {
+    scale: 105%;
+    cursor: pointer;
+  }
+}
+
 //---------FUNCTIONALITY---------
 //mobile menu
 .show-menu {

@@ -431,6 +431,18 @@ header {
   font-size: 1.5rem;
   cursor: pointer; }
 
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background-color: var(--base-col-alt);
+  border-radius: 0.25rem; }
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--base-col);
+  border-radius: 0.25rem; }
+  ::-webkit-scrollbar-thumb:hover {
+    scale: 105%;
+    cursor: pointer; }
+
 .show-menu {
   bottom: 0; }
 
