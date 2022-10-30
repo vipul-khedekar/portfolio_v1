@@ -16,6 +16,7 @@ const specializationModalClose = document.querySelectorAll(
 const specializationModals = document.querySelectorAll(
   `[data-specialization-modal]`
 );
+const scrollUp = document.querySelector(`[data-scrollup]`);
 
 //---------MENU TOGGLE - MOBILE VIEW---------
 //***queried elements are first validated to avoid undefined/blank
@@ -94,3 +95,15 @@ if (specializationModalClose) {
     });
   });
 }
+
+//---------HIDE SCROLL TO TOP---------
+function scrolling() {
+  //if scroll position is higher than 560vh
+  if (this.scrollY >= 560) {
+    scrollUp.classList.add(`show-scroll`);
+  } else {
+    scrollUp.classList.remove(`show-scroll`);
+  }
+}
+
+window.addEventListener(`scroll`, scrolling);
