@@ -1,4 +1,4 @@
-//ELEMENT SELECTION
+//ELEMENTS SELECTION
 const navMenu = document.querySelector(`[data-nav-menu]`);
 const navToggle = document.querySelector(`[data-nav-toggle]`);
 const navClose = document.querySelector(`[data-nav-close]`);
@@ -7,6 +7,15 @@ const sliderWrapper = document.querySelector(`[data-slider-wrapper]`);
 const sliderSlides = document.querySelectorAll(`[data-slider-slides]`);
 const sliderPrev = document.querySelector(`[data-slider-prev]`);
 const sliderNext = document.querySelector(`[data-slider-next]`);
+const specializationModalOpen = document.querySelectorAll(
+  `[data-specialization-modal-open]`
+);
+const specializationModalClose = document.querySelectorAll(
+  `[data-specialization-modal-close]`
+);
+const specializationModals = document.querySelectorAll(
+  `[data-specialization-modal]`
+);
 
 //MENU TOGGLE - MOBILE VIEW
 //queried elements are first validated to avoid undefined/blank
@@ -54,5 +63,26 @@ if (sliderNext) {
     sliderWrapper.style.transition = `transform 0.4s ease-in-out`;
     counter++;
     sliderWrapper.style.transform = `translateX(${-size * counter}px)`;
+  });
+}
+
+//MODAL
+if (specializationModalOpen) {
+  specializationModalOpen.forEach((button, i) => {
+    button.addEventListener(`click`, () => {
+      specializationModals[i].classList.remove(
+        `specialization__modal-inactive`
+      );
+      specializationModals[i].classList.add(`specialization__modal-active`);
+    });
+  });
+}
+
+if (specializationModalClose) {
+  specializationModalClose.forEach((button, i) => {
+    button.addEventListener(`click`, () => {
+      specializationModals[i].classList.remove(`specialization__modal-active`);
+      specializationModals[i].classList.add(`specialization__modal-inactive`);
+    });
   });
 }

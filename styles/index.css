@@ -440,3 +440,9 @@ header {
 
 .slider__next {
   right: 1.5rem; }
+
+.specialization__modal-active {
+  visibility: visible; }
+
+.specialization__modal-inactive {
+  visibility: hidden; }
