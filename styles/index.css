@@ -443,6 +443,93 @@ header {
     scale: 105%;
     cursor: pointer; }
 
+@media screen and (max-width: 430px) {
+  .container {
+    margin: 0 2rem; }
+  .nav__menu {
+    padding: 1.5rem 0.25rem; }
+  .nav__list {
+    column-gap: 0; }
+  .home__content {
+    grid-template-columns: 1fr 3fr; }
+  .home__backdrop {
+    width: 240px; }
+  .specialization__container {
+    grid-template-columns: max-content;
+    justify-content: center; }
+  .specialization__content {
+    width: 280px;
+    padding: 2rem 3.5rem 2rem 3rem; }
+  .specialization__modal {
+    padding: 0 0.5rem; } }
+
+@media screen and (min-width: 808px) {
+  body {
+    margin: 0; }
+  .page {
+    padding: 5rem 0 2rem; }
+  .page__subtitle {
+    margin-bottom: 2rem; }
+  .container {
+    margin: 0 auto; }
+  .header {
+    top: 0;
+    bottom: initial; }
+  .header,
+  .main,
+  .footer {
+    padding: 0 2rem; }
+  .nav {
+    height: 3.25rem;
+    column-gap: 1rem; }
+  .nav__icon,
+  .nav__close,
+  .nav__toggle {
+    display: none; }
+  .nav__list {
+    display: flex;
+    align-items: center;
+    column-gap: 2rem; }
+  .nav__menu {
+    margin-left: auto;
+    margin-right: 1.25rem; }
+  .change-theme {
+    margin-right: -1rem; }
+  .home__container {
+    row-gap: 5rem; }
+  .home__content {
+    grid-template-columns: max-content 3fr 2.5fr;
+    column-gap: 2.25rem;
+    padding-top: 6rem; }
+  .home__data {
+    grid-column: initial; }
+  .home__backdrop {
+    width: 340px; }
+  .home__image {
+    justify-self: center;
+    order: 1; }
+  .home__scroll {
+    display: none; }
+  .portfolio__content {
+    grid-template-columns: repeat(2, 1fr); }
+  .specialization__container {
+    grid-template-columns: repeat(2, 360px);
+    justify-content: center; }
+  .specialization__icon {
+    font-size: 3.5rem; }
+  .specialization__content {
+    padding: 3rem 5.5rem 2.5rem 3.5rem; }
+  .specialization__modal-content {
+    width: 500px;
+    padding: 2rem; }
+  .portfolio__image {
+    height: auto;
+    width: 380px; }
+  .portfolio__content {
+    align-items: center; }
+  .footer__container {
+    grid-template-columns: repeat(3, 1fr); } }
+
 .show-menu {
   bottom: 0; }
 
