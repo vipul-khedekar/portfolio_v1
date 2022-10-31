@@ -718,6 +718,40 @@ header {
 }
 
 //desktop screen
+@media screen and (min-width: 1024px) {
+  .header,
+  .main {
+    padding: 0;
+  }
+
+  .home__content {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 8rem;
+    margin-left: -20rem;
+  }
+
+  .home__data {
+    min-width: 600px;
+  }
+
+  .home__backdrop {
+    width: 500px;
+  }
+
+  .specialization__container {
+    grid-template-rows: 380px;
+    grid-template-columns: repeat(2, 550px);
+    gap: 3rem;
+  }
+
+  .portfolio__content {
+    column-gap: 6rem;
+  }
+
+  .footer__container {
+    padding: 2rem;
+  }
+}
 
 //---------FUNCTIONALITY---------
 //mobile menu
