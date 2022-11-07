@@ -557,6 +557,7 @@
         <article class="contact page" id="contact">
             <!-- Contacts Header -->
             <h2 class="page__title">Contact Me</h2>
+            <span class="page__subtitle">Get in touch with me</span>
 
             <!-- Contact Form -->
             <section class="contact__container container grid">
@@ -567,14 +568,16 @@
                         <div class="contact__content">
                             <label class="contact__label" for="name">Name</label>
 
-                            <input class="contact__input" type="text" id="name">
+                            <input data-input-name class="contact__input" type="text" autocomplete="off" id="name"
+                                name="name">
                         </div>
 
                         <!-- Email Input -->
                         <div class="contact__content">
                             <label class="contact__label" for="email">Email</label>
 
-                            <input class="contact__input" type="email" id="email">
+                            <input data-input-email class="contact__input" type="email" autocomplete="off" id="email"
+                                name="email">
                         </div>
                     </div>
 
@@ -583,11 +586,12 @@
                         <!-- Message Input -->
                         <label class="contact__label" for="message">Message</label>
 
-                        <textarea class="contact__input" id="message" name="message" cols="0" rows="7"></textarea>
+                        <textarea data-input-message class="contact__input" autocomplete="off" id="message"
+                            name="message" cols="0" rows="7"></textarea>
                     </div>
 
                     <!-- Form Submit -->
-                    <button class="contact__button button--flex" type="submit">
+                    <button data-form-submit class="contact__button button--flex" type="submit">
                         Send Message <i class="contact__icon uil uil-fast-mail"></i>
                     </button>
                 </form>

@@ -19,6 +19,10 @@ const specializationModals = document.querySelectorAll(
 const scrollUp = document.querySelector(`[data-scrollup]`);
 const themeButton = document.querySelector(`[data-theme-button]`);
 const body = document.querySelector(`body`);
+const inputName = document.querySelector(`[data-input-name]`);
+const inputEmail = document.querySelector(`[data-input-email]`);
+const inputMessage = document.querySelector(`[data-input-message]`);
+const formSubmit = document.querySelector(`[data-form-submit]`);
 
 //---------MENU TOGGLE - MOBILE VIEW---------
 //***queried elements are first validated to avoid undefined/blank
@@ -150,4 +154,33 @@ themeButton.addEventListener(`click`, () => {
 
   localStorage.setItem(`selected-theme`, getCurrentTheme());
   localStorage.setItem(`selected-icon`, getCurrentIcon());
+});
+
+//contact form submit
+async function submitContacts() {
+  const nameValue = inputName.value;
+  const emailValue = inputEmail.value;
+  const messageValue = inputMessage.value;
+  const fetchConfig = {
+    method: "POST",
+    body: JSON.stringify({
+      data: { name: nameValue, email: emailValue, message: messageValue },
+    }),
+  };
+
+  fetch(
+    `https://api.apispreadsheets.com/data/uo6VKPEoXIPfdFrO/`,
+    fetchConfig
+  ).then((response) => {
+    if (response.status === 201) {
+      console.log(`success`);
+    } else {
+      console.log(`fail`);
+    }
+  });
+}
+
+formSubmit.addEventListener(`click`, (e) => {
+  e.preventDefault();
+  submitContacts();
 });
