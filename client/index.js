@@ -23,6 +23,7 @@ const inputName = document.querySelector(`[data-input-name]`);
 const inputEmail = document.querySelector(`[data-input-email]`);
 const inputMessage = document.querySelector(`[data-input-message]`);
 const formSubmit = document.querySelector(`[data-form-submit]`);
+const formMessage = document.querySelector(`[data-form-message]`);
 
 //---------MENU TOGGLE - MOBILE VIEW---------
 //***queried elements are first validated to avoid undefined/blank
@@ -173,11 +174,21 @@ async function submitContacts() {
     fetchConfig
   ).then((response) => {
     if (response.status === 201) {
-      console.log(`success`);
+      formMessage.textContent = `Message sent successfully`;
+      setTimeout(() => {
+        formMessage.textContent = ``;
+      }, 2500);
     } else {
-      console.log(`fail`);
+      formMessage.textContent = `Something went wrong. Please try again sometime later...`;
+      setTimeout(() => {
+        formMessage.textContent = ``;
+      }, 2500);
     }
   });
+
+  nameValue = ``;
+  emailValue = ``;
+  messageValue = ``;
 }
 
 formSubmit.addEventListener(`click`, (e) => {
