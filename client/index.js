@@ -162,6 +162,7 @@ async function submitContacts() {
   const nameValue = inputName.value;
   const emailValue = inputEmail.value;
   const messageValue = inputMessage.value;
+  //convenient way of adding all option for the fetch
   const fetchConfig = {
     method: "POST",
     body: JSON.stringify({
@@ -169,6 +170,7 @@ async function submitContacts() {
     }),
   };
 
+  //checks to see if input fields are not invalid
   if (
     nameValue !== `` &&
     emailValue !== `` &&
@@ -197,11 +199,13 @@ async function submitContacts() {
     );
   }
 
+  //blank out fields after submission
   nameValue = ``;
   emailValue = ``;
   messageValue = ``;
 }
 
+//prevent submit's default action and post request to the api
 formSubmit.addEventListener(`click`, (e) => {
   e.preventDefault();
   submitContacts();
