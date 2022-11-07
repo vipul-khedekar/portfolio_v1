@@ -1,8 +1,6 @@
 :root {
   --serious-font: "Roboto Slab", serif;
   --relaxed-font: "League Spartan", sans-serif;
-  --base-col: #fbe180;
-  --base-col-alt: #fff9c7;
   --rest-col: #edeae5;
   --accent-col: #016670;
   --accent-col-alt: #9fedd7;
@@ -592,8 +590,6 @@ header {
   bottom: 5rem; }
 
 body.dark-theme {
-  --base-col: #801336;
-  --base-col-alt: #510a32;
   --rest-col: #2d142c;
   --accent-col: #ee4540;
   --accent-col-alt: #c92a42;

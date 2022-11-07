@@ -157,7 +157,7 @@ themeButton.addEventListener(`click`, () => {
   localStorage.setItem(`selected-icon`, getCurrentIcon());
 });
 
-//contact form submit
+//---------SUBMIT CONTACT FORM---------
 async function submitContacts() {
   const nameValue = inputName.value;
   const emailValue = inputEmail.value;
