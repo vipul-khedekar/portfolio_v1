@@ -169,22 +169,33 @@ async function submitContacts() {
     }),
   };
 
-  fetch(
-    `https://api.apispreadsheets.com/data/uo6VKPEoXIPfdFrO/`,
-    fetchConfig
-  ).then((response) => {
-    if (response.status === 201) {
-      formMessage.textContent = `Message sent successfully`;
-      setTimeout(() => {
-        formMessage.textContent = ``;
-      }, 2500);
-    } else {
-      formMessage.textContent = `Something went wrong. Please try again sometime later...`;
-      setTimeout(() => {
-        formMessage.textContent = ``;
-      }, 2500);
-    }
-  });
+  if (
+    nameValue !== `` &&
+    emailValue !== `` &&
+    messageValue !== `` &&
+    emailValue.includes(`@`)
+  ) {
+    fetch(
+      `https://api.apispreadsheets.com/data/uo6VKPEoXIPfdFrO/`,
+      fetchConfig
+    ).then((response) => {
+      if (response.status === 201) {
+        formMessage.textContent = `Message sent successfully`;
+        setTimeout(() => {
+          formMessage.textContent = ``;
+        }, 2500);
+      } else {
+        formMessage.textContent = `Something went wrong. Please try again sometime later...`;
+        setTimeout(() => {
+          formMessage.textContent = ``;
+        }, 2500);
+      }
+    });
+  } else {
+    alert(
+      `Please make sure your detail fields are not blank and contains a valid email address.`
+    );
+  }
 
   nameValue = ``;
   emailValue = ``;
