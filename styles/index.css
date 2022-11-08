@@ -216,7 +216,7 @@ header {
   padding: 0.5rem 1.5rem;
   border-radius: 0.25rem;
   color: var(--text-col-alt);
-  font-size: large;
+  font-size: var(--large-font);
   font-weight: 700; }
   .home__button:hover {
     background: linear-gradient(175deg, var(--accent-col), var(--accent-col-alt), var(--accent-col-alt), var(--accent-col));
@@ -250,28 +250,58 @@ header {
   scale: 95%; }
 
 .skillset__content {
+  height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 1.5rem; }
+  padding: 1rem 1rem 0;
+  word-spacing: 0.125rem;
+  line-height: 1.125rem; }
 
-.skillset__container {
+.skillset__list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  column-gap: 1rem;
-  row-gap: 1.875rem; }
+  column-gap: 1.25rem;
+  row-gap: 1.5rem; }
 
 .skillset__item {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
-  font-style: italic; }
+  font-weight: 700; }
 
 .skillset__icon {
-  height: auto;
-  width: 100%;
+  height: 50px;
+  width: 50px;
   max-width: 180px; }
+
+.skillset__name {
+  text-align: center; }
+
+.skillset__download {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1rem; }
+
+.skillset__button-download {
+  background: linear-gradient(175deg, var(--accent-col-alt), var(--accent-col), var(--accent-col), var(--accent-col-alt));
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.25rem;
+  color: var(--text-col-alt);
+  font-size: var(--large-font);
+  font-weight: 700; }
+  .skillset__button-download:hover {
+    background: linear-gradient(175deg, var(--accent-col), var(--accent-col-alt), var(--accent-col-alt), var(--accent-col));
+    scale: 105%;
+    transition: 0.5s; }
+  .skillset__button-download:active {
+    transform: translateY(0.25rem);
+    transition: 0.05s; }
+  .skillset__button-download:hover .button__icon {
+    transform: translateX(0.5rem); }
 
 .portfolio__content {
   padding: 0 1.5rem; }
@@ -541,6 +571,19 @@ header {
     margin-left: 4rem; }
   .home__scroll-name {
     padding: 0 0.5rem; }
+  .skillset {
+    height: 96vh;
+    padding: 6rem 1.5rem 0; }
+  .skillset__content {
+    font-size: var(--large-font);
+    word-spacing: 0.25rem;
+    line-height: 1.5rem; }
+  .skillset__list {
+    column-gap: 1.25rem;
+    row-gap: 1.875rem; }
+  .skillset__icon {
+    height: 78px;
+    width: 78px; }
   .portfolio__content {
     grid-template-columns: repeat(2, 1fr); }
   .specialization__container {
@@ -580,6 +623,30 @@ header {
   .home__image {
     margin-right: -10rem;
     scale: 400%; }
+  .skillset {
+    margin-top: -1rem; }
+  .skillset__content {
+    height: 76vh;
+    padding: 1rem 1.5rem 0; }
+    .skillset__content .page__description {
+      width: 80vw;
+      word-spacing: 0.25rem;
+      line-height: 1.5rem; }
+  .skillset__list {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    column-gap: 4.5rem;
+    row-gap: 2rem;
+    margin-top: 1rem; }
+  .skillset__item {
+    gap: 0.75rem;
+    font-size: var(--base-font); }
+  .skillset__icon {
+    height: 70px;
+    width: 70px; }
+  .skillset__download {
+    gap: 1rem;
+    margin-top: 0.5rem; }
   .specialization__container {
     grid-template-rows: 380px;
     grid-template-columns: repeat(2, 550px);
