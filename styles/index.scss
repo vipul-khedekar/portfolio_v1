@@ -307,6 +307,11 @@ header {
     transition: 0.5s;
   }
 
+  &:active {
+    transform: translateY(0.25rem);
+    transition: 0.05s;
+  }
+
   &:hover .button__icon {
     transform: translateX(0.5rem);
   }
