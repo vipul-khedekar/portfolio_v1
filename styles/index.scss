@@ -683,7 +683,7 @@ header {
 }
 
 .footer {
-  background-color: var(--base-col);
+  background-color: var(--accent-col);
   padding: 1.5rem 0;
 }
 
@@ -694,6 +694,7 @@ header {
 .footer__options {
   display: flex;
   justify-content: space-between;
+  padding-top: 2rem;
 }
 
 .footer__links {
@@ -704,7 +705,17 @@ header {
 }
 
 .footer__link {
-  color: var(--accent-col);
+  color: var(--text-col-alt);
+
+  &:hover {
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 0.25rem;
+  }
+
+  &:active {
+    color: var(--accent-col-alt);
+  }
 }
 
 .footer__socials {
@@ -714,25 +725,45 @@ header {
   font-size: 1.25rem;
 }
 
+.footer__social {
+  font-size: 1.75rem;
+}
+
 .footer__icon {
-  color: var(--accent-col);
+  color: var(--text-col-alt);
 }
 
 .footer__copyright,
 .footer__message {
+  margin-top: 0.25rem;
+  color: var(--text-col-alt);
   text-align: center;
+  word-spacing: 0.125rem;
+}
+
+.footer__message {
+  margin-bottom: -0.75rem;
 }
 
 .scrollup {
-  background-color: var(--accent-col);
+  background: linear-gradient(125deg, var(--accent-col), var(--accent-col-alt));
   padding: 0.125rem;
-  border-radius: 0.5rem;
+  border: 2px solid var(--text-col-alt);
+  border-radius: 0.125rem;
   position: fixed;
   z-index: var(--tooltip-sp);
   right: 1rem;
   bottom: -20%;
   opacity: 80%;
   transition: 0.3s;
+
+  &:hover {
+    background-color: var(--accent-col);
+  }
+
+  &:active {
+    scale: 90%;
+  }
 }
 
 .scrollup__icon {
@@ -994,7 +1025,15 @@ header {
   }
 
   .footer__container {
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-direction: column;
+    padding: 0 2.5rem 1.25rem;
+  }
+
+  .footer__copyright,
+  .footer__message {
+    font-size: var(--large-font);
+    word-spacing: 0.125rem;
   }
 }
 
@@ -1146,6 +1185,23 @@ header {
 
   .footer__container {
     padding: 2rem;
+  }
+
+  .footer__options {
+    padding-top: 0;
+  }
+
+  .footer__links {
+    gap: 1.5rem;
+    letter-spacing: 0.125rem;
+  }
+
+  .footer__socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
   }
 }
 
