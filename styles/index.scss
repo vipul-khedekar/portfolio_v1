@@ -169,6 +169,10 @@ header {
 }
 
 //------------------
+.header {
+  background-color: var(--accent-col);
+}
+
 .nav {
   max-width: 968px;
   height: 3rem;
@@ -179,7 +183,7 @@ header {
 
 .nav__logo,
 .nav__toggle {
-  color: var(--accent-col);
+  color: var(--text-col-alt);
   font-size: 1.25rem;
   font-weight: 700;
   cursor: pointer;
@@ -188,7 +192,7 @@ header {
 @media screen and (max-width: 767px) {
   .nav__menu {
     width: 100%;
-    background-color: var(--base-col);
+    background-color: var(--accent-col);
     padding: 2rem 1.5rem 4rem;
     border-radius: 1.5rem 1.5rem 0 0;
     position: fixed;
@@ -208,7 +212,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: var(--accent-col);
+  color: var(--text-col-alt);
   font-size: var(--small-font);
   font-weight: 700;
 }
@@ -221,7 +225,7 @@ header {
   position: absolute;
   right: 1.25rem;
   bottom: 0.5rem;
-  color: var(--accent-col);
+  color: var(--text-col-alt);
   font-size: 1.5rem;
   cursor: pointer;
 }
@@ -773,7 +777,7 @@ header {
 
 .change-theme {
   margin-right: 1rem;
-  color: var(--accent-col);
+  color: var(--text-col-alt);
   font-size: 1.5rem;
   cursor: pointer;
 }
