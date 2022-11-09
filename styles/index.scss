@@ -443,14 +443,27 @@ header {
   }
 }
 
+.portfolio {
+  height: 92vh;
+}
+
 .portfolio__content {
   padding: 0 1.5rem;
 }
 
 .portfolio__image {
-  width: 265px;
+  height: auto;
+  width: 300px;
   justify-self: center;
-  border-radius: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.portfolio__stack {
+  margin-top: 1rem;
+
+  .portfolio__title {
+    font-size: var(--base-font);
+  }
 }
 
 .portfolio__title {
@@ -459,11 +472,109 @@ header {
 }
 
 .portfolio__description {
-  margin-bottom: 0.75rem;
+  margin-top: 1rem;
+  font-size: var(--large-font);
+  word-spacing: 0.25rem;
+  line-height: 1.25rem;
 }
 
-.portfolio__button:hover .button__icon {
-  scale: 120%;
+.portfolio__stack-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.125rem;
+  flex-wrap: wrap;
+  padding: 0.25rem 0.75rem;
+
+  p {
+    padding: 0.25rem;
+    border: 1.5px solid var(--accent-col);
+    border-radius: 0.125rem;
+    color: var(--accent-col);
+  }
+}
+
+.portfolio__actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.portfolio__button {
+  background: linear-gradient(
+    175deg,
+    var(--accent-col-alt),
+    var(--accent-col),
+    var(--accent-col),
+    var(--accent-col-alt)
+  );
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.25rem;
+  color: var(--text-col-alt);
+  font-size: var(--large-font);
+  font-weight: 700;
+
+  &:hover {
+    background: linear-gradient(
+      175deg,
+      var(--accent-col),
+      var(--accent-col-alt),
+      var(--accent-col-alt),
+      var(--accent-col)
+    );
+    scale: 105%;
+    transition: 0.5s;
+  }
+
+  &:active {
+    transform: translateY(0.25rem);
+    transition: 0.05s;
+  }
+
+  &:hover .button__icon {
+    transform: translateX(0.5rem);
+  }
+}
+
+.portfolio__icon {
+  margin-left: 0.75rem;
+}
+
+.slider__container {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider__wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 100%);
+}
+
+.slider__prev,
+.slider__next {
+  height: 35px;
+  width: 45px;
+  background: linear-gradient(125deg, var(--accent-col), var(--accent-col-alt));
+  padding: 0.125rem;
+  border: 2px solid var(--text-col-alt);
+  border-radius: 0.125rem;
+  position: absolute;
+  z-index: var(--tooltip-sp);
+  top: 8.5rem;
+  box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.4);
+  color: var(--text-col-alt);
+  font-size: var(--largest-font);
+}
+
+.slider__prev {
+  left: 0.25rem;
+}
+
+.slider__next {
+  right: 0.25rem;
 }
 
 .specialization {
@@ -959,8 +1070,33 @@ header {
     width: 78px;
   }
 
+  .portfolio {
+    height: auto;
+  }
+
   .portfolio__content {
     grid-template-columns: repeat(2, 1fr);
+    padding: 0 0.25rem;
+  }
+
+  .slider__container {
+    position: relative;
+  }
+
+  .slider__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .portfolio__actions {
+    flex-direction: row;
+  }
+
+  .slider__next,
+  .slider__prev {
+    display: none;
   }
 
   .specialization__container {
@@ -1147,8 +1283,21 @@ header {
     margin-top: 0.5rem;
   }
 
+  .slider__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    column-gap: 0;
+    margin-top: 0.5rem;
+  }
+
   .portfolio__content {
-    column-gap: 6rem;
+    width: 800px;
+    padding: 0.25rem;
+    border: 1.5px solid var(--accent-col);
+    border-radius: 0.25rem;
   }
 
   .specialization {
@@ -1250,37 +1399,6 @@ header {
 .show-menu {
   bottom: 0;
 }
-
-//slider---v
-.slider__container {
-  position: relative;
-  overflow: hidden;
-}
-
-.slider__wrapper {
-  display: grid;
-  grid-template-columns: repeat(4, 100%);
-}
-
-.slider__prev,
-.slider__next {
-  height: 35px;
-  width: 45px;
-  position: absolute;
-  z-index: var(--tooltip-sp);
-  top: 7.5rem;
-  box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.4);
-  font-size: var(--larger-font);
-}
-
-.slider__prev {
-  left: 1.5rem;
-}
-
-.slider__next {
-  right: 1.5rem;
-}
-//slider---^
 
 //modal---v
 .specialization__modal-active {
