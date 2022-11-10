@@ -932,6 +932,9 @@ header {
     padding: 0.25rem;
     border: 1.5px solid var(--accent-col);
     border-radius: 0.25rem; }
+  .portfolio__button {
+    padding-left: 1rem;
+    padding-right: 1rem; }
   .specialization {
     height: 96vh;
     display: flex;
