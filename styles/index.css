@@ -405,7 +405,7 @@ header {
 
 .slider__wrapper {
   display: grid;
-  grid-template-columns: repeat(4, 100%); }
+  grid-template-columns: repeat(5, 100%); }
 
 .slider__prev,
 .slider__next {
