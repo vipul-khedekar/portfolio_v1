@@ -70,7 +70,7 @@ body {
   background-color: var(--rest-col);
   margin: 0 0 3rem 0;
   color: var(--text-col);
-  font-family: var(--relaxed-font);
+  font-family: var(--serious-font);
   font-size: var(--base-font);
   font-weight: 400;
 }
@@ -189,6 +189,11 @@ header {
   cursor: pointer;
 }
 
+.nav__logo {
+  font-size: var(--largest-font);
+  letter-spacing: 0.125rem;
+}
+
 @media screen and (max-width: 767px) {
   .nav__menu {
     width: 100%;
@@ -224,8 +229,13 @@ header {
   flex-direction: column;
   align-items: center;
   color: var(--text-col-alt);
-  font-size: var(--small-font);
+  font-size: var(--base-font);
   font-weight: 700;
+
+  &:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.25rem;
+  }
 }
 
 .nav__icon {
@@ -293,7 +303,8 @@ header {
 .home__description {
   margin-bottom: 1rem;
   font-size: var(--large-font);
-  line-height: 1.25rem;
+  word-spacing: 0.125rem;
+  line-height: 1.5rem;
 }
 
 .home__quicknav {
@@ -301,7 +312,7 @@ header {
   justify-content: flex-start;
   align-items: center;
   gap: 1.5rem;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 }
 
 .home__button {
@@ -1212,6 +1223,10 @@ header {
     padding: 0;
   }
 
+  .nav__logo {
+    margin-right: 4rem;
+  }
+
   .nav__list {
     gap: 3rem;
   }
@@ -1235,13 +1250,16 @@ header {
 
   .home__container {
     height: 76vh;
-    padding-top: 6rem;
   }
 
   .home__content {
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 8rem;
     margin-left: -20rem;
+  }
+
+  .home__social {
+    padding-left: 6rem;
   }
 
   .home__data {
@@ -1365,6 +1383,25 @@ header {
 
   .contact__content {
     width: 650px;
+    font-family: var(--relaxed-font);
+
+    input {
+      letter-spacing: normal;
+    }
+
+    textarea {
+      height: 100px;
+      letter-spacing: normal;
+    }
+  }
+
+  .contact__button {
+    font-family: var(--serious-font);
+    font-weight: 700;
+
+    .contact__icon {
+      margin-left: 1rem;
+    }
   }
 
   .contact__content-message {
