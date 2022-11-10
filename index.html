@@ -13,6 +13,7 @@
 
     <link href="./styles/index.css" rel="stylesheet" type="text/css">
     <link href="./styles/animation-keyframes.css" rel="stylesheet" type="text/css">
+    <link href="./styles/animation-classes.css" rel="stylesheet" type="text/css">
     <script src="./client/index.js" type="module" defer></script>
 
     <title>Document</title>
@@ -20,13 +21,13 @@
 
 <body>
     <!-- Header Area -->
-    <header header class="header">
+    <header header class="header slide-in-top">
         <nav class="nav container">
             <!-- Header Logo -->
-            <a class="nav__logo" href="#">Vipul</a>
+            <a class="nav__logo vibrate-1" href="#">Vipul</a>
 
             <!-- Header Menu List -->
-            <section data-nav-menu class="nav__menu">
+            <section data-nav-menu class="nav__menu text-focus-in">
                 <ul class="nav__list grid">
                     <!-- Header Menu Item - Home -->
                     <li class="nav__item">
@@ -69,7 +70,7 @@
             </section>
 
             <!-- Header Setting List -->
-            <section class="nav__buttons">
+            <section class="nav__buttons text-focus-in">
                 <!-- Theme Selection -->
                 <i data-theme-button class="change-theme uil uil-moon"></i>
 
@@ -89,52 +90,55 @@
                 <!-- Home Sections -->
                 <section class="home__content grid">
                     <!-- Home Social List -->
-                    <section class="home__social">
+                    <section class="home__social slide-in-left">
                         <!-- Home Social Item - Linkedin -->
-                        <a class="home__social-icon" href="#" target="_blank">
+                        <a class="home__social-icon jello-horizontal" href="#" target="_blank">
                             <i class="uil uil-linkedin-alt"></i>
                         </a>
 
                         <!-- Home Social Item - Github -->
-                        <a class="home__social-icon" href="#" target="_blank">
+                        <a class="home__social-icon jello-horizontal" href="#" target="_blank">
                             <i class="uil uil-github-alt"></i>
                         </a>
 
                         <!-- Home Social Item - Email -->
-                        <a class="home__social-icon" href="#" target="_blank">
+                        <a class="home__social-icon jello-horizontal" href="#" target="_blank">
                             <i class="uil uil-envelope-add"></i>
                         </a>
                     </section>
 
                     <!-- Home Hero Image -->
-                    <img class="home__image" src="./assets/mockups/home-green.svg" alt="home-image">
+                    <img class="home__image slide-in-right" src="./assets/mockups/home-green.svg" alt="home-image">
 
                     <!-- Home Hero Information -->
-                    <section class="home__data">
-                        <h1 class="home__title">Hi!, I'm Vipul Khedekar</h1>
+                    <section class="home__data slide-in-left">
+                        <h1 class="home__title text-focus-in">Hi!, I'm Vipul Khedekar</h1>
 
-                        <h3 class="home__subtitle">A Frontend Developer</h3>
+                        <h3 class="home__subtitle text-focus-in">A Frontend Developer</h3>
 
-                        <p class="home__description">Experienced engineer who adds value to a business product through
+                        <p class="home__description text-focus-in">Experienced engineer who adds value to a business
+                            product through
                             his work, using latest tech stack. And always optimizing the approach.
                         </p>
 
-                        <p class="home__description">Being organized, creative, detail oriented, self-starter,
+                        <p class="home__description text-focus-in">Being organized, creative, detail oriented,
+                            self-starter,
                             ownership focused and writing clean code are my forte.
                         </p>
 
-                        <p class="home__description">Always upskilling and thrilled to work on complex design and
+                        <p class="home__description text-focus-in">Always upskilling and thrilled to work on complex
+                            design and
                             functionality cases to deliver a great user experience.
                         </p>
 
-                        <a class="home__button button--flex" href="#contact">
+                        <a class="home__button button--flex shake-bottom" href="#contact">
                             Contact Me<i class="button__icon uil uil-message nav__icon"></i>
                         </a>
                     </section>
                 </section>
 
                 <!-- Home Scroll Instruction -->
-                <section class="home__scroll">
+                <section class="home__scroll slide-in-left">
                     <a class="home__scroll-button button--flex" href="#about">
                         <i class="home__scroll-mouse uil uil-mouse-alt"></i>
                         <span class="home__scroll-name">Scroll Down</span>
@@ -147,115 +151,117 @@
         <!-- Skillset & About Page -->
         <article data-about class="skillset page" id="skillset">
             <!-- Skillset & About Header -->
-            <h2 class="page__title">Skillset</h2>
+            <h2 class="page__title text-focus-in">Skillset</h2>
 
             <!-- Content -->
             <section class="skillset__content container grid">
                 <!-- Skill Descriptions -->
-                <p class="page__description">I can create functional and attractive interfaces by converting the mockup
+                <p class="page__description text-focus-in">I can create functional and attractive interfaces by
+                    converting the mockup
                     design for website and web apps.</p>
 
-                <p class="page__description">User experience being the highest priority.</p>
+                <p class="page__description text-focus-in">User experience being the highest priority.</p>
 
-                <p class="page__description">While making them responsive for 99% of device screen sizes, constantly
+                <p class="page__description text-focus-in">While making them responsive for 99% of device screen sizes,
+                    constantly
                     optimizing code snippets for efficient load times, keeping an organized code and project structure,
                     using appropriate tags for SEO rankings and accessibility for specially-abled users, using the tech
                     mentioned below.</p>
 
                 <!-- Skills List -->
-                <section class="skillset__list">
+                <section class="skillset__list text-focus-in">
                     <!-- React JS -->
-                    <div class="skillset__item">
+                    <div class="skillset__item jello-horizontal">
                         <img class="skillset__icon" src="./assets/skills/react-js.svg" alt="skill-icon">
                         <p class="skillset__name">React JS</p>
                     </div>
 
                     <!-- Redux Toolkit -->
-                    <div class="skillset__item">
+                    <div class="skillset__item jello-horizontal">
                         <img class="skillset__icon" src="./assets/skills/redux-toolkit.svg" alt="skill-icon">
                         <p class="skillset__name">Redux Toolkit</p>
                     </div>
 
                     <!-- React Router -->
-                    <div class="skillset__item">
+                    <div class="skillset__item jello-horizontal">
                         <img class="skillset__icon" src="./assets/skills/react-router.svg" alt="skill-icon">
                         <p class="skillset__name">React Router</p>
                     </div>
 
                     <!-- Swiper JS -->
-                    <div class="skillset__item">
+                    <div class="skillset__item jello-horizontal">
                         <img class="skillset__icon" src="./assets/skills/swiper-js.svg" alt="skill-icon">
                         <p class="skillset__name">Swiper JS</p>
                     </div>
 
                     <!-- Javascript ES6 -->
-                    <div class="skillset__item">
+                    <div class="skillset__item jello-horizontal">
                         <img class="skillset__icon" src="./assets/skills/javascript-es6.svg" alt="skill-icon">
                         <p class="skillset__name">Javascript ES6</p>
                     </div>
 
                     <!-- Typescript -->
-                    <div class="skillset__item">
+                    <div class="skillset__item jello-horizontal">
                         <img class="skillset__icon" src="./assets/skills/typescript.svg" alt="skill-icon">
                         <p class="skillset__name">Typescript</p>
                     </div>
 
                     <!-- CSS 3 -->
-                    <div class="skillset__item">
+                    <div class="skillset__item jello-horizontal">
                         <img class="skillset__icon" src="./assets/skills/css-3.svg" alt="skill-icon">
                         <p class="skillset__name">CSS 3</p>
                     </div>
 
                     <!-- HTML 5 -->
-                    <div class="skillset__item">
+                    <div class="skillset__item jello-horizontal">
                         <img class="skillset__icon" src="./assets/skills/html-5.svg" alt="skill-icon">
                         <p class="skillset__name">HTML 5</p>
                     </div>
 
                     <!-- SCSS/SASS -->
-                    <div class="skillset__item">
+                    <div class="skillset__item jello-horizontal">
                         <img class="skillset__icon" src="./assets/skills/scss-sass.svg" alt="skill-icon">
                         <p class="skillset__name">SCSS/SASS</p>
                     </div>
 
                     <!-- TailwindCSS -->
-                    <div class="skillset__item">
+                    <div class="skillset__item jello-horizontal">
                         <img class="skillset__icon" src="./assets/skills/tailwind-css.svg" alt="skill-icon">
                         <p class="skillset__name">TailwindCSS</p>
                     </div>
 
                     <!-- Styled Components -->
-                    <div class="skillset__item">
+                    <div class="skillset__item jello-horizontal">
                         <img class="skillset__icon" src="./assets/skills/styled-components.svg" alt="skill-icon">
                         <p class="skillset__name">Styled Components</p>
                     </div>
 
                     <!-- Material UI -->
-                    <div class="skillset__item">
+                    <div class="skillset__item jello-horizontal">
                         <img class="skillset__icon" src="./assets/skills/material-ui.svg" alt="skill-icon">
                         <p class="skillset__name">Material UI</p>
                     </div>
 
                     <!-- Node JS -->
-                    <div class="skillset__item">
+                    <div class="skillset__item jello-horizontal">
                         <img class="skillset__icon" src="./assets/skills/node-js.svg" alt="skill-icon">
                         <p class="skillset__name">Node JS</p>
                     </div>
 
                     <!-- Git -->
-                    <div class="skillset__item">
+                    <div class="skillset__item jello-horizontal">
                         <img class="skillset__icon" src="./assets/skills/git.svg" alt="skill-icon">
                         <p class="skillset__name">Git</p>
                     </div>
 
                     <!-- Firebase -->
-                    <div class="skillset__item">
+                    <div class="skillset__item jello-horizontal">
                         <img class="skillset__icon" src="./assets/skills/firebase.svg" alt="skill-icon">
                         <p class="skillset__name">Firebase</p>
                     </div>
 
                     <!-- Netlify -->
-                    <div class="skillset__item">
+                    <div class="skillset__item jello-horizontal">
                         <img class="skillset__icon" src="./assets/skills/netlify.svg" alt="skill-icon">
                         <p class="skillset__name">Netlify</p>
                     </div>
@@ -265,7 +271,7 @@
                 <section class="skillset__download">
                     <p class="page__description">Get my latest résumé by clicking on the button below.</p>
 
-                    <a class="skillset__button-download button--flex" href="#resume" download>
+                    <a class="skillset__button-download button--flex shake-bottom" href="#resume" download>
                         Download Résumé <i class="button__icon uil uil-download-alt"></i>
                     </a>
                 </section>
@@ -528,11 +534,11 @@
 
             <section class="specialization__section">
                 <!-- Specialization Show Image -->
-                <img class="specialization__image" src="./assets/mockups/specialization-green.svg"
+                <img class="specialization__image slide-in-left" src="./assets/mockups/specialization-green.svg"
                     alt="specialization-image">
 
                 <!-- Specialization List -->
-                <section class="specialization__container container grid">
+                <section class="specialization__container container grid slide-in-right">
                     <!-- Specialization Item - Profession -->
                     <section class="specialization__content">
                         <!-- Profession Header -->
@@ -568,7 +574,7 @@
         </article>
 
         <!-- Contacts Page -->
-        <article class="contact page" id="contact">
+        <article class="contact page text-focus-in" id="contact">
             <!-- Contacts Header -->
             <h2 class="page__title">Contact Me</h2>
             <span class="page__subtitle">Get in touch with me</span>
@@ -605,12 +611,12 @@
                     </div>
 
                     <!-- Form Submit -->
-                    <button data-form-submit class="contact__button button--flex" type="submit">
+                    <button data-form-submit class="contact__button button--flex shake-bottom" type="submit">
                         Send Message <i class="contact__icon uil uil-fast-mail"></i>
                     </button>
 
                     <!-- Form Message -->
-                    <p data-form-message class="contact__message-form"></p>
+                    <p data-form-message class="contact__message-form text-focus-in"></p>
                 </form>
 
                 <!-- Alternate Contacts -->
@@ -619,7 +625,7 @@
 
                     <ul class="contact__socials-links">
                         <!-- Linkedin Contact -->
-                        <li class="contact__socials-link">
+                        <li class="contact__socials-link jello-horizontal">
                             <a href="#">
                                 <img class="contact__socials-image" src="./assets/socials-color/linkedin.svg"
                                     alt="linkedin">
@@ -627,7 +633,7 @@
                         </li>
 
                         <!-- Github Contact -->
-                        <li class="contact__socials-link">
+                        <li class="contact__socials-link jello-horizontal">
                             <a href="#">
                                 <img class="contact__socials-image" src="./assets/socials-color/github.svg"
                                     alt="github">
@@ -635,7 +641,7 @@
                         </li>
 
                         <!-- Email Contact -->
-                        <li class="contact__socials-link">
+                        <li class="contact__socials-link jello-horizontal">
                             <a href="#">
                                 <img class="contact__socials-image" src="./assets/socials-color/gmail.svg" alt="gmail">
                             </a>
@@ -647,7 +653,7 @@
     </main>
 
     <!-- Footer Area -->
-    <footer class="footer">
+    <footer class="footer slide-in-bottom">
         <section class="footer__container container grid">
             <!-- Footer Menu -->
             <section class="footer__options">
@@ -677,32 +683,33 @@
                 <!-- Footer Social List -->
                 <section class="footer__socials">
                     <!-- Footer Social - Linkedin -->
-                    <a class="footer__social" href="#" target="_blank">
+                    <a class="footer__social jello-horizontal" href="#" target="_blank">
                         <i class="footer__icon uil uil-linkedin"></i>
                     </a>
 
                     <!-- Footer Social - Github -->
-                    <a class="footer__social" href="#" target="_blank">
+                    <a class="footer__social jello-horizontal" href="#" target="_blank">
                         <i class="footer__icon uil uil-github"></i>
                     </a>
 
                     <!-- Footer Social - Email -->
-                    <a class="footer__social" href="#" target="_blank">
+                    <a class="footer__social jello-horizontal" href="#" target="_blank">
                         <i class="footer__icon uil uil-envelope"></i>
                     </a>
                 </section>
             </section>
 
             <!-- Footer - Page Made By -->
-            <p class="footer__message">Made with 🐱 by Vipul Khedekar, Frontend Developer.</p>
+            <p class="footer__message">Made with 🐱 by Vipul Khedekar, Frontend
+                Developer.</p>
 
             <!-- Footer - Copyright -->
-            <p class="footer__copyright">©∞ — Vipul Khedekar. All rights reserved.</>
+            <p class="footer__copyright">©∞ — Vipul Khedekar. All rights reserved.</sp>
         </section>
     </footer>
 
     <!-- Scroll To Top -->
-    <a data-scrollup class="scrollup" href="#">
+    <a data-scrollup class="scrollup shake-bottom" href="#">
         <i class="scrollup__icon uil uil-angle-double-up"></i>
     </a>
 </body>
