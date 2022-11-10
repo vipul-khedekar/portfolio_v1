@@ -223,6 +223,13 @@ header {
   font-size: var(--large-font);
   line-height: 1.25rem; }
 
+.home__quicknav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem; }
+
 .home__button {
   background: linear-gradient(175deg, var(--accent-col-alt), var(--accent-col), var(--accent-col), var(--accent-col-alt));
   padding: 0.5rem 1.5rem;
@@ -748,6 +755,13 @@ header {
     order: 1;
     margin-top: -3rem;
     scale: 110%; }
+  .home__quicknav {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0; }
   .home__scroll {
     margin-top: -4rem;
     margin-left: 4rem; }
@@ -864,6 +878,8 @@ header {
     margin-left: -20rem; }
   .home__data {
     min-width: 600px; }
+  .home__quicknav {
+    margin-bottom: 2rem; }
   .home__scroll {
     margin-top: -5rem;
     margin-left: -4.5rem; }
