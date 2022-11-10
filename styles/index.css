@@ -244,8 +244,6 @@ header {
   .home__button:active {
     transform: translateY(0.25rem);
     transition: 0.05s; }
-  .home__button:hover .button__icon {
-    transform: translateX(0.5rem); }
 
 .home__scroll {
   margin-top: -1.5rem; }
