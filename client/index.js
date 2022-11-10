@@ -158,18 +158,12 @@ themeButton.addEventListener(`click`, () => {
 });
 
 //---------SUBMIT CONTACT FORM---------
-async function submitContacts() {
-  const nameValue = inputName.value;
-  const emailValue = inputEmail.value;
-  const messageValue = inputMessage.value;
-  //convenient way of adding all option for the fetch
-  const fetchConfig = {
-    method: "POST",
-    body: JSON.stringify({
-      data: { name: nameValue, email: emailValue, message: messageValue },
-    }),
-  };
-
+async function submitContacts(
+  fetchConfig,
+  nameValue,
+  emailValue,
+  messageValue
+) {
   //checks to see if input fields are not invalid
   if (
     nameValue !== `` &&
@@ -198,15 +192,30 @@ async function submitContacts() {
       `Please make sure your detail fields are not blank and contains a valid email address.`
     );
   }
-
-  //blank out fields after submission
-  nameValue = ``;
-  emailValue = ``;
-  messageValue = ``;
 }
 
 //prevent submit's default action and post request to the api
 formSubmit.addEventListener(`click`, (e) => {
   e.preventDefault();
-  submitContacts();
+
+  //get values of inputs
+  const nameValue = inputName.value;
+  const emailValue = inputEmail.value;
+  const messageValue = inputMessage.value;
+
+  //convenient way of adding all option for the fetch
+  const fetchConfig = {
+    method: "POST",
+    body: JSON.stringify({
+      data: { name: nameValue, email: emailValue, message: messageValue },
+    }),
+  };
+
+  //submit
+  submitContacts(fetchConfig, nameValue, emailValue, messageValue);
+
+  //blank out fields after submission
+  inputName.value = ``;
+  inputEmail.value = ``;
+  inputMessage.value = ``;
 });
