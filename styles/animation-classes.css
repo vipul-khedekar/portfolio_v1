@@ -28,9 +28,9 @@
 }
 
 .shake-bottom:hover {
-  -webkit-animation: shake-bottom 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+  -webkit-animation: shake-bottom 2.5s cubic-bezier(0.455, 0.03, 0.515, 0.955)
     both;
-  animation: shake-bottom 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  animation: shake-bottom 2.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
 }
 
 .jello-horizontal:hover {
