@@ -28,31 +28,17 @@
 
   //---------FONT SIZES---------
   --humongous-font: 2rem;
-  --largest-font: 1.5rem;
-  --larger-font: 1.25rem;
-  --large-font: 1.125rem;
-  --base-font: 0.875rem;
+  --largest-font: 1.75rem;
+  --larger-font: 1.5rem;
+  --large-font: 1.25rem;
+  --base-font: 1rem;
   --small-font: 0.75rem;
-  --smaller-font: 0.75rem;
+  --smaller-font: 0.5rem;
 
   //---------MISC SIZES - FROM SMALL TO LARGE - FOR REFERENCE---------
   //font weights: 100 - thin, 400 - base, 700 - bold
   //spacing: 0.125rem, 0.25rem, 0.5rem, 0.75rem, 0.875rem, 1rem, ...
   //lengths: whole or even numbers in px
-}
-
-//---------DESKTOP SCREEN---------
-@media screen and (min-width: 968px) {
-  :root {
-    //---------FONT SIZES---------
-    --humongous-font: 3rem;
-    --largest-font: 2.25rem;
-    --larger-font: 1.5rem;
-    --large-font: 1.25rem;
-    --base-font: 1rem;
-    --small-font: 0.875rem;
-    --smaller-font: 0.75rem;
-  }
 }
 
 //---------RESETTERS & DEFAULTS---------
@@ -128,7 +114,7 @@ header {
 .page__subtitle {
   display: block;
   margin-bottom: 3rem;
-  font-size: var(--small-font);
+  font-size: var(--large-font);
 }
 
 .page__title,
@@ -1248,7 +1234,7 @@ header {
   }
 
   .home__container {
-    height: 76vh;
+    height: 90vh;
   }
 
   .home__content {
@@ -1279,16 +1265,13 @@ header {
     scale: 400%;
   }
 
-  .skillset {
-    margin-top: -1rem;
-  }
-
   .skillset__content {
-    height: 76vh;
-    padding: 1rem 1.5rem 0;
+    height: 90vh;
+    padding: 0.75rem 1.5rem 0;
 
     .page__description {
       width: 80vw;
+      font-size: var(--base-font);
       word-spacing: 0.25rem;
       line-height: 1.5rem;
     }
@@ -1297,7 +1280,7 @@ header {
   .skillset__list {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    column-gap: 4.5rem;
+    column-gap: 4.25rem;
     row-gap: 2rem;
     margin-top: 1rem;
   }
@@ -1308,13 +1291,21 @@ header {
   }
 
   .skillset__icon {
-    height: 70px;
+    height: 60px;
     width: 70px;
   }
 
   .skillset__download {
-    gap: 1rem;
-    margin-top: 0.5rem;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+
+    a {
+      font-size: var(--base-font);
+
+      i {
+        margin-left: 1rem;
+      }
+    }
   }
 
   .slider__wrapper {
