@@ -27,12 +27,6 @@
   animation: text-focus-in 0.7s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
-.shake-bottom:hover {
-  -webkit-animation: shake-bottom 2.5s cubic-bezier(0.455, 0.03, 0.515, 0.955)
-    both;
-  animation: shake-bottom 2.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
-}
-
 .jello-horizontal:hover {
   -webkit-animation: jello-horizontal 0.6s both;
   animation: jello-horizontal 0.6s both;
