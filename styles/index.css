@@ -176,7 +176,7 @@ header {
     text-underline-offset: 0.25rem; }
 
 .nav__icon {
-  font-size: 1.125rem; }
+  font-size: 1rem; }
 
 .nav__close {
   position: absolute;
@@ -191,6 +191,8 @@ header {
   justify-content: center;
   align-items: center;
   gap: 1rem; }
+  .nav__buttons i {
+    font-size: 1.125rem; }
 
 .home__container {
   height: 90vh;
@@ -208,7 +210,7 @@ header {
 
 .home__social-icon {
   color: var(--accent-col);
-  font-size: 1.5rem; }
+  font-size: 1.25rem; }
 
 .home__data {
   grid-column: 1/3;

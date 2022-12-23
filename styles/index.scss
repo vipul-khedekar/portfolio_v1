@@ -239,7 +239,7 @@ header {
 }
 
 .nav__icon {
-  font-size: 1.125rem;
+  font-size: 1rem;
 }
 
 .nav__close {
@@ -256,6 +256,10 @@ header {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+
+  i {
+    font-size: 1.125rem;
+  }
 }
 
 .home__container {
@@ -277,7 +281,7 @@ header {
 
 .home__social-icon {
   color: var(--accent-col);
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .home__data {
