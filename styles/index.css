@@ -884,6 +884,8 @@ header {
   .home__image {
     margin-right: -10rem;
     scale: 400%; }
+  .skillset {
+    margin-top: -5rem; }
   .skillset__content {
     height: 90vh;
     padding: 0.75rem 1.5rem 0; }
