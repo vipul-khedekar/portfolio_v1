@@ -602,20 +602,20 @@ header {
 
 .specialization__content {
   background: linear-gradient(125deg, var(--accent-col), var(--accent-col-alt));
-  padding: 3rem 1rem;
+  padding: 2rem 1rem;
   border-radius: 0.25rem;
   position: relative;
   box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.4);
 
   &:hover {
-    background: var(--accent-col-alt);
-    scale: 101%;
+    scale: 102%;
+    transition: 0.5s;
   }
 
   &:hover .specialization__icon,
   &:hover .specialization__title,
   &:hover .specialization__button {
-    transform: translateX(2rem);
+    transform: translate(4rem, -1rem);
     transition: 0.5s;
   }
 }
@@ -1146,18 +1146,6 @@ header {
 
   .specialization__content {
     height: 300px;
-
-    &:hover {
-      background: var(--accent-col-alt);
-      scale: 102%;
-    }
-
-    &:hover .specialization__icon,
-    &:hover .specialization__title,
-    &:hover .specialization__button {
-      transform: translate(5.125rem, 1.25rem);
-      transition: 0.5s;
-    }
   }
 
   .contact__container {
@@ -1352,18 +1340,6 @@ header {
 
   .specialization__content {
     height: 300px;
-
-    &:hover {
-      background: var(--accent-col-alt);
-      scale: 102%;
-    }
-
-    &:hover .specialization__icon,
-    &:hover .specialization__title,
-    &:hover .specialization__button {
-      transform: translate(3.5rem, 0.25rem);
-      transition: 0.5s;
-    }
   }
 
   .contact {
