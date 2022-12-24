@@ -517,31 +517,30 @@ header {
 .specialization__modal-icon {
   color: var(--accent-col); }
 
-.contact__container {
-  height: 76vh; }
+.contact {
+  height: 90vh; }
 
 .contact__form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.75rem;
-  margin-top: -1rem; }
+  gap: 1rem; }
 
 .contact__content {
-  height: 100px;
+  height: 95px;
   width: 350px;
   background-color: var(--accent-col-alt);
   padding: 0.75rem;
   border-radius: 0.25rem; }
 
 .contact__content-message {
-  height: 220px; }
+  height: 160px; }
   .contact__content-message textarea {
     width: 100%; }
 
 .contact__label {
   color: var(--text-col-alt);
-  font-size: var(--large-font);
+  font-size: var(--base-font);
   letter-spacing: 0.125rem; }
 
 .contact__input {
@@ -552,17 +551,17 @@ header {
   outline: none;
   resize: none;
   color: var(--text-col);
-  font-size: var(--large-font);
+  font-size: var(--base-font);
   font-weight: 100;
   letter-spacing: 0.125rem; }
 
 .contact__button {
   background: linear-gradient(175deg, var(--accent-col-alt), var(--accent-col), var(--accent-col), var(--accent-col-alt));
-  padding: 0.25rem 1.5rem;
+  padding: 0 1.5rem;
   border: none;
   border-radius: 0.25rem;
   color: var(--text-col-alt);
-  font-size: var(--large-font); }
+  font-size: var(--base-font); }
   .contact__button:hover {
     background: linear-gradient(175deg, var(--accent-col), var(--accent-col-alt), var(--accent-col-alt), var(--accent-col));
     scale: 105%;
@@ -576,13 +575,10 @@ header {
 
 .contact__icon {
   margin-left: 0.5rem;
-  font-size: 2rem; }
+  font-size: 1.75rem; }
 
 .contact__socials {
   margin-top: -1rem; }
-  .contact__socials .page__description {
-    font-size: var(--base-font);
-    word-spacing: 0.25rem; }
 
 .contact__socials-links {
   display: flex;
@@ -825,8 +821,6 @@ header {
     padding: 1rem; }
   .contact__socials {
     margin-top: -2rem; }
-    .contact__socials .page__description {
-      font-size: var(--large-font); }
   .contact__socials-links {
     gap: 3rem;
     margin-top: 1.25rem; }
@@ -936,12 +930,7 @@ header {
   .specialization__content {
     height: 300px; }
   .contact {
-    margin-top: -3rem; }
-  .contact__container {
-    height: 80vh; }
-  .contact__form {
-    gap: 1rem;
-    margin-top: -1rem; }
+    margin-top: -3.5rem; }
   .contact__content {
     width: 650px;
     font-family: var(--relaxed-font); }
@@ -955,13 +944,8 @@ header {
     font-weight: 700; }
     .contact__button .contact__icon {
       margin-left: 1rem; }
-  .contact__content-message {
-    height: 240px; }
   .contact__socials {
     margin-top: -1rem; }
-    .contact__socials .page__description {
-      font-size: var(--large-font);
-      word-spacing: 0.125rem; }
   .contact__socials-links {
     gap: 2.5rem;
     margin-top: 0.5rem; }
