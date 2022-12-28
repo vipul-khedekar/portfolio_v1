@@ -1113,6 +1113,10 @@ header {
     justify-content: center;
   }
 
+  .specialization__section {
+    margin-top: 2rem;
+  }
+
   .specialization__icon {
     font-size: 3.5rem;
   }
@@ -1133,10 +1137,6 @@ header {
 
   .portfolio__content {
     align-items: center;
-  }
-
-  .specialization {
-    height: 96vh;
   }
 
   .specialization__image {
