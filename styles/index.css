@@ -949,16 +949,23 @@ header {
     .contact__content textarea {
       height: 100px;
       letter-spacing: normal; }
+  .contact__content-message {
+    height: 180px;
+    margin-bottom: -1rem; }
   .contact__button {
     font-family: var(--serious-font);
     font-weight: 700; }
     .contact__button .contact__icon {
       margin-left: 1rem; }
+  .contact__socials {
+    margin: 0.25rem 0; }
   .contact__socials-links {
     gap: 2.5rem;
     margin-top: 0.5rem; }
   .contact__socials-image {
     width: 45px; }
+  .footer {
+    margin-top: 1rem; }
   .footer__options {
     padding-top: 0; }
   .footer__links {

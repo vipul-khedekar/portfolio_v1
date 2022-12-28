@@ -1363,6 +1363,11 @@ header {
     }
   }
 
+  .contact__content-message {
+    height: 180px;
+    margin-bottom: -1rem;
+  }
+
   .contact__button {
     font-family: var(--serious-font);
     font-weight: 700;
@@ -1372,6 +1377,10 @@ header {
     }
   }
 
+  .contact__socials {
+    margin: 0.25rem 0;
+  }
+
   .contact__socials-links {
     gap: 2.5rem;
     margin-top: 0.5rem;
@@ -1379,6 +1388,10 @@ header {
 
   .contact__socials-image {
     width: 45px;
+  }
+
+  .footer {
+    margin-top: 1rem;
   }
 
   .footer__options {
