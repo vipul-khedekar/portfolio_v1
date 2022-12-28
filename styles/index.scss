@@ -800,11 +800,11 @@ header {
 
 .footer {
   background-color: var(--accent-col);
-  padding: 1.5rem 0;
 }
 
 .footer__container {
   row-gap: 1.5rem;
+  padding: 1rem;
 }
 
 .footer__options {
@@ -817,7 +817,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  font-size: large;
+  font-size: var(--base-font);
 }
 
 .footer__link {
@@ -838,11 +838,10 @@ header {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  font-size: 1.25rem;
 }
 
 .footer__social {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
 }
 
 .footer__icon {
@@ -858,7 +857,11 @@ header {
 }
 
 .footer__message {
-  margin-bottom: -0.75rem;
+  margin-bottom: -1rem;
+}
+
+.footer__copyright {
+  font-size: var(--small-font);
 }
 
 .scrollup {
@@ -1162,12 +1165,10 @@ header {
   .footer__container {
     display: flex;
     flex-direction: column;
-    padding: 0 2.5rem 1.25rem;
   }
 
   .footer__copyright,
   .footer__message {
-    font-size: var(--large-font);
     word-spacing: 0.125rem;
   }
 }
@@ -1359,10 +1360,6 @@ header {
 
   .contact__socials-image {
     width: 45px;
-  }
-
-  .footer__container {
-    padding: 2rem;
   }
 
   .footer__options {
