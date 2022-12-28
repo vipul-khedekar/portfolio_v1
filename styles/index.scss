@@ -1063,25 +1063,20 @@ header {
     display: none;
   }
 
-  .skillset {
-    height: 96vh;
-    padding: 6rem 1.5rem 0;
-  }
-
   .skillset__content {
-    font-size: var(--large-font);
     word-spacing: 0.25rem;
-    line-height: 1.5rem;
+    line-height: 1.75rem;
   }
 
   .skillset__list {
-    column-gap: 1.25rem;
-    row-gap: 1.875rem;
+    column-gap: 1.5rem;
+    row-gap: 2rem;
+    margin-top: 1rem;
   }
 
   .skillset__icon {
-    height: 78px;
-    width: 78px;
+    height: 70px;
+    width: 70px;
   }
 
   .portfolio {
