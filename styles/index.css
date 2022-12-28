@@ -518,7 +518,7 @@ header {
   color: var(--accent-col); }
 
 .contact {
-  height: 90vh; }
+  height: 100vh; }
 
 .contact__form {
   display: flex;
@@ -576,9 +576,6 @@ header {
 .contact__icon {
   margin-left: 0.5rem;
   font-size: 1.75rem; }
-
-.contact__socials {
-  margin-top: -1rem; }
 
 .contact__socials-links {
   display: flex;
@@ -811,7 +808,8 @@ header {
   .specialization__content {
     height: 300px; }
   .contact__container {
-    height: 70vh; }
+    height: 70vh;
+    margin-top: 1rem; }
   .contact__form {
     margin-top: 0.75rem; }
   .contact__content {
@@ -819,8 +817,6 @@ header {
     display: flex;
     flex-direction: column;
     padding: 1rem; }
-  .contact__socials {
-    margin-top: -2rem; }
   .contact__socials-links {
     gap: 3rem;
     margin-top: 1.25rem; }
@@ -944,8 +940,6 @@ header {
     font-weight: 700; }
     .contact__button .contact__icon {
       margin-left: 1rem; }
-  .contact__socials {
-    margin-top: -1rem; }
   .contact__socials-links {
     gap: 2.5rem;
     margin-top: 0.5rem; }

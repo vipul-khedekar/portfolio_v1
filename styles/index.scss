@@ -698,7 +698,7 @@ header {
 }
 
 .contact {
-  height: 90vh;
+  height: 100vh;
 }
 
 .contact__form {
@@ -783,10 +783,6 @@ header {
 .contact__icon {
   margin-left: 0.5rem;
   font-size: 1.75rem;
-}
-
-.contact__socials {
-  margin-top: -1rem;
 }
 
 .contact__socials-links {
@@ -1144,6 +1140,7 @@ header {
 
   .contact__container {
     height: 70vh;
+    margin-top: 1rem;
   }
 
   .contact__form {
@@ -1155,10 +1152,6 @@ header {
     display: flex;
     flex-direction: column;
     padding: 1rem;
-  }
-
-  .contact__socials {
-    margin-top: -2rem;
   }
 
   .contact__socials-links {
@@ -1357,10 +1350,6 @@ header {
     .contact__icon {
       margin-left: 1rem;
     }
-  }
-
-  .contact__socials {
-    margin-top: -1rem;
   }
 
   .contact__socials-links {
