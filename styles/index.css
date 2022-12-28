@@ -818,7 +818,6 @@ header {
   .specialization__content {
     height: 300px; }
   .contact__container {
-    height: 70vh;
     margin-top: 1rem; }
   .contact__form {
     margin-top: 0.75rem; }
@@ -827,9 +826,16 @@ header {
     display: flex;
     flex-direction: column;
     padding: 1rem; }
+  .contact__content-message {
+    height: 300px; }
+  .contact__button {
+    margin-top: 1rem;
+    font-size: var(--large-font); }
+  .contact__socials {
+    margin-top: -5rem; }
   .contact__socials-links {
     gap: 3rem;
-    margin-top: 1.25rem; }
+    margin-top: 1.5rem; }
   .footer__container {
     display: flex;
     flex-direction: column; }
