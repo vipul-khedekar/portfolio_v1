@@ -16,6 +16,15 @@
   --base-font: 1rem;
   --small-font: 0.75rem;
   --smaller-font: 0.5rem; }
+  @media screen and (min-width: 808px) {
+    :root {
+      --humongous-font: 2rem;
+      --largest-font: 1.5rem;
+      --larger-font: 1.25rem;
+      --large-font: 1rem;
+      --base-font: 0.875rem;
+      --small-font: 0.75rem;
+      --smaller-font: 0.5rem; } }
 
 * {
   box-sizing: border-box;
@@ -730,8 +739,13 @@ header {
     display: none; }
   .change-theme {
     margin-left: 1.75rem; }
+  .home__container,
+  .skillset__container,
+  .portfolio__container,
+  .specialization__container,
+  .contact__container {
+    height: 82vh; }
   .home__container {
-    height: 60vh;
     row-gap: 5rem; }
   .home__content {
     grid-template-columns: max-content 3fr 2.5fr;
@@ -753,10 +767,7 @@ header {
     margin-top: 1.5rem;
     margin-bottom: 0; }
   .home__scroll {
-    margin-top: -4rem;
-    margin-left: 4rem; }
-  .home__scroll-name {
-    padding: 0 0.5rem; }
+    display: none; }
   .skillset {
     height: 96vh;
     padding: 6rem 1.5rem 0; }
