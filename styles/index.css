@@ -16,15 +16,6 @@
   --base-font: 1rem;
   --small-font: 0.75rem;
   --smaller-font: 0.5rem; }
-  @media screen and (min-width: 808px) {
-    :root {
-      --humongous-font: 2rem;
-      --largest-font: 1.5rem;
-      --larger-font: 1.25rem;
-      --large-font: 1rem;
-      --base-font: 0.875rem;
-      --small-font: 0.75rem;
-      --smaller-font: 0.5rem; } }
 
 * {
   box-sizing: border-box;
