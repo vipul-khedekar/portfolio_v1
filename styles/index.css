@@ -20,7 +20,9 @@
 * {
   box-sizing: border-box;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent-col) var(--accent-col-alt); }
 
 html {
   scroll-behavior: smooth; }
