@@ -548,11 +548,6 @@ header {
   overflow: hidden;
 }
 
-.slider__wrapper {
-  display: grid;
-  grid-template-columns: repeat(5, 100%);
-}
-
 .slider__prev,
 .slider__next {
   height: 35px;
@@ -1086,7 +1081,6 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3rem;
   }
 
   .portfolio__actions {
@@ -1294,19 +1288,17 @@ header {
   }
 
   .slider__wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
     align-items: center;
-    column-gap: 0;
-    margin-top: 0.5rem;
+    gap: 1rem;
   }
 
   .portfolio__content {
-    width: 800px;
-    padding: 0.25rem;
-    border: 1.5px solid var(--accent-col);
+    width: 900px;
+    padding: 0.5rem;
+    border: 2px solid var(--accent-col);
     border-radius: 0.25rem;
   }
 
