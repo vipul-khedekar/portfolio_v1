@@ -894,6 +894,8 @@ header {
       font-size: var(--base-font); }
       .skillset__download a i {
         margin-left: 1rem; }
+  .portfolio span {
+    font-size: var(--base-font); }
   .portfolio__container {
     height: 100%; }
   .slider__wrapper {
@@ -907,6 +909,21 @@ header {
     padding: 0.5rem;
     border: 2px solid var(--accent-col);
     border-radius: 0.25rem; }
+    .portfolio__content .portfolio__left .portfolio__image:hover {
+      margin-left: 1.25rem;
+      scale: 104%;
+      transition: 800ms; }
+    .portfolio__content .portfolio__left .portfolio__stack .portfolio__stack-list p {
+      padding: 0.5rem;
+      font-size: var(--small-font); }
+    .portfolio__content .portfolio__data .portfolio__title {
+      font-size: var(--larger-font); }
+    .portfolio__content .portfolio__data .portfolio__description {
+      font-size: var(--base-font);
+      word-spacing: 0.25rem;
+      line-height: 1.75rem; }
+    .portfolio__content .portfolio__data .portfolio__actions a {
+      font-size: var(--base-font); }
   .portfolio__button {
     padding-left: 1rem;
     padding-right: 1rem; }
