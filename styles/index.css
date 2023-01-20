@@ -420,8 +420,7 @@ header {
 .specialization__section {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-top: -4rem; }
+  align-items: center; }
 
 .specialization__image {
   height: auto;
@@ -915,7 +914,8 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    margin-top: 10rem; }
   .specialization__section {
     display: flex;
     flex-direction: row;
@@ -923,6 +923,8 @@ header {
     align-items: center;
     gap: 4rem;
     padding: 4rem 2rem 0; }
+  .specialization__image {
+    margin-top: -14rem; }
   .specialization__content {
     height: 300px; }
   .contact {
