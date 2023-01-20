@@ -928,7 +928,9 @@ header {
   .specialization__content {
     height: 300px; }
   .contact {
-    margin-top: -3.5rem; }
+    margin-top: -3.25rem; }
+  .contact__form {
+    margin-bottom: -2rem; }
   .contact__content {
     width: 650px;
     font-family: var(--relaxed-font); }
