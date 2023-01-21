@@ -772,14 +772,16 @@ header {
     border: 2px solid var(--text-col-alt);
     border-radius: 0.25rem;
     top: 16rem; }
+  .specialization {
+    padding-top: 2rem; }
+    .specialization .page__title {
+      font-size: var(--larger-font); }
   .specialization__container {
     grid-template-columns: max-content;
     justify-content: center; }
   .specialization__content {
     width: 280px;
-    padding: 2rem 3.5rem 2rem 3rem; }
-  .specialization__modal {
-    padding: 0 0.5rem; } }
+    padding: 1rem 3.5rem 1.5rem 3rem; } }
 
 @media screen and (min-width: 808px) {
   body {
