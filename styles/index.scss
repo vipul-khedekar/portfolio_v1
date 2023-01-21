@@ -1220,7 +1220,6 @@ header {
 
   .home__container,
   .skillset__container,
-  .specialization__container,
   .contact__container {
     height: 82vh;
   }
@@ -1613,7 +1612,10 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 10rem;
+
+    .page__title {
+      padding-top: 6rem;
+    }
   }
 
   .specialization__section {
@@ -1625,16 +1627,12 @@ header {
     padding: 4rem 2rem 0;
   }
 
-  .specialization__image {
-    margin-top: -14rem;
-  }
-
   .specialization__content {
     height: 300px;
   }
 
   .contact {
-    margin-top: -3.25rem;
+    margin-top: 2rem;
   }
 
   .contact__form {
