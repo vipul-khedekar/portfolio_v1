@@ -1,5 +1,4 @@
 //---------VARIABLES---------
-//---------GENERAL AND MOBILE SCREEN TYPE---------
 :root {
   //---------FONTS FAMILIES---------
   --serious-font: "Roboto Slab", serif;
@@ -929,8 +928,44 @@ header {
     grid-template-columns: 1fr 3fr;
   }
 
-  .home__backdrop {
-    width: 240px;
+  .home__container {
+    margin-top: -2.5rem;
+
+    .home__data {
+      margin-top: 0;
+
+      .home__title {
+        font-size: var(--largest-font);
+      }
+
+      .home__subtitle {
+        font-size: var(--large-font);
+      }
+
+      .home__description {
+        font-size: var(--base-font);
+        line-height: 1.75rem;
+        word-spacing: 0.25rem;
+      }
+
+      .home__quicknav {
+        padding: 0.5rem 0;
+
+        a {
+          font-size: var(--base-font);
+        }
+      }
+    }
+  }
+
+  .home__scroll-name {
+    padding-left: 0.25rem;
+    font-size: var(--small-font);
+  }
+
+  .home__scroll-arrow,
+  .home__scroll-mouse {
+    font-size: var(--base-font);
   }
 
   .specialization__container {
