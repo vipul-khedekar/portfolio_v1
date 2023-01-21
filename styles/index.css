@@ -1097,12 +1097,13 @@ header {
     .contact__button .contact__icon {
       margin-left: 1rem; }
   .contact__socials {
-    margin: 0.25rem 0; }
+    margin: 2rem 0; }
   .contact__socials-links {
     gap: 2.5rem;
     margin-top: 0.5rem; }
   .contact__socials-image {
-    width: 45px; }
+    height: 40px;
+    width: 40px; }
   .footer {
     margin-top: 1rem; }
   .footer__options {
