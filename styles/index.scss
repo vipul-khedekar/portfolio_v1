@@ -981,7 +981,7 @@ header {
       }
 
       .skillset__list {
-        column-gap: 3rem;
+        column-gap: 2.25rem;
         row-gap: 1rem;
 
         .skillset__item {
@@ -992,15 +992,15 @@ header {
 
           .skillset__name {
             margin-top: -0.25rem;
-            font-size: var(--smaller-font);
+            font-size: var(--small-font);
           }
         }
       }
 
       .skillset__download {
         .page__description {
-          margin-top: -1rem;
-          font-size: var(--base-font);
+          margin-top: -0.25rem;
+          font-size: var(--small-font);
           line-height: 1.5rem;
           word-spacing: 0.125rem;
         }
