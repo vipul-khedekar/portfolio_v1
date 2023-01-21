@@ -15,7 +15,7 @@
   --large-font: 1.25rem;
   --base-font: 1rem;
   --small-font: 0.75rem;
-  --smaller-font: 0.5rem; }
+  --smaller-font: 0.6rem; }
 
 * {
   box-sizing: border-box;
@@ -704,6 +704,28 @@ header {
     font-size: var(--small-font); }
   .home__scroll-arrow,
   .home__scroll-mouse {
+    font-size: var(--base-font); }
+  .skillset .page__title {
+    font-size: var(--larger-font); }
+  .skillset .skillset__content .page__description {
+    font-size: var(--base-font);
+    line-height: 1.5rem;
+    word-spacing: 0.125rem; }
+  .skillset .skillset__content .skillset__list {
+    column-gap: 3rem;
+    row-gap: 1rem; }
+    .skillset .skillset__content .skillset__list .skillset__item .skillset__icon {
+      height: 30px;
+      width: 30px; }
+    .skillset .skillset__content .skillset__list .skillset__item .skillset__name {
+      margin-top: -0.25rem;
+      font-size: var(--smaller-font); }
+  .skillset .skillset__content .skillset__download .page__description {
+    margin-top: -1rem;
+    font-size: var(--base-font);
+    line-height: 1.5rem;
+    word-spacing: 0.125rem; }
+  .skillset .skillset__content .skillset__download .skillset__button-download {
     font-size: var(--base-font); }
   .specialization__container {
     grid-template-columns: max-content;

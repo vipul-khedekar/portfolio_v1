@@ -32,7 +32,7 @@
   --large-font: 1.25rem;
   --base-font: 1rem;
   --small-font: 0.75rem;
-  --smaller-font: 0.5rem;
+  --smaller-font: 0.6rem;
 
   //---------MISC SIZES - FROM SMALL TO LARGE - FOR REFERENCE---------
   //font weights: 100 - thin, 400 - base, 700 - bold
@@ -966,6 +966,50 @@ header {
   .home__scroll-arrow,
   .home__scroll-mouse {
     font-size: var(--base-font);
+  }
+
+  .skillset {
+    .page__title {
+      font-size: var(--larger-font);
+    }
+
+    .skillset__content {
+      .page__description {
+        font-size: var(--base-font);
+        line-height: 1.5rem;
+        word-spacing: 0.125rem;
+      }
+
+      .skillset__list {
+        column-gap: 3rem;
+        row-gap: 1rem;
+
+        .skillset__item {
+          .skillset__icon {
+            height: 30px;
+            width: 30px;
+          }
+
+          .skillset__name {
+            margin-top: -0.25rem;
+            font-size: var(--smaller-font);
+          }
+        }
+      }
+
+      .skillset__download {
+        .page__description {
+          margin-top: -1rem;
+          font-size: var(--base-font);
+          line-height: 1.5rem;
+          word-spacing: 0.125rem;
+        }
+
+        .skillset__button-download {
+          font-size: var(--base-font);
+        }
+      }
+    }
   }
 
   .specialization__container {
