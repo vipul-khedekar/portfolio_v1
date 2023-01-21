@@ -860,7 +860,7 @@ header {
 }
 
 .scrollup {
-  background: linear-gradient(125deg, var(--accent-col), var(--accent-col-alt));
+  background-color: var(--accent-col);
   padding: 0.125rem;
   border: 2px solid var(--text-col-alt);
   border-radius: 0.125rem;
@@ -1088,7 +1088,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid white;
+    border: 2px solid var(--text-col-alt);
     border-radius: 0.25rem;
     top: 16rem;
   }
