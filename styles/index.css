@@ -727,15 +727,51 @@ header {
     word-spacing: 0.125rem; }
   .skillset .skillset__content .skillset__download .skillset__button-download {
     font-size: var(--base-font); }
-  .portfolio .page__title {
-    font-size: var(--larger-font); }
-  .portfolio .page__subtitle {
-    font-size: var(--small-font); }
-  .portfolio .slider__container .slider__wrapper {
-    display: grid;
-    grid-template-columns: repeat(4, 100%); }
-    .portfolio .slider__container .slider__wrapper .portfolio__content {
-      width: 100vw; }
+  .portfolio {
+    height: 95vh; }
+    .portfolio .page__title {
+      font-size: var(--larger-font); }
+    .portfolio .page__subtitle {
+      font-size: var(--small-font); }
+    .portfolio .slider__container .slider__wrapper {
+      display: grid;
+      grid-template-columns: repeat(4, 100%); }
+      .portfolio .slider__container .slider__wrapper .portfolio__content {
+        width: 100vw; }
+        .portfolio .slider__container .slider__wrapper .portfolio__content .portfolio__left {
+          height: auto; }
+          .portfolio .slider__container .slider__wrapper .portfolio__content .portfolio__left .portfolio__image {
+            margin-left: 2.25rem; }
+          .portfolio .slider__container .slider__wrapper .portfolio__content .portfolio__left .portfolio__stack {
+            margin-left: 1.5rem; }
+            .portfolio .slider__container .slider__wrapper .portfolio__content .portfolio__left .portfolio__stack .portfolio__title {
+              font-size: var(--small-font); }
+            .portfolio .slider__container .slider__wrapper .portfolio__content .portfolio__left .portfolio__stack .portfolio__stack-list p {
+              padding: 0.5rem;
+              font-size: var(--small-font); }
+        .portfolio .slider__container .slider__wrapper .portfolio__content .portfolio__data {
+          margin-top: -1rem; }
+          .portfolio .slider__container .slider__wrapper .portfolio__content .portfolio__data .portfolio__title {
+            font-size: var(--large-font);
+            word-spacing: 0.25rem;
+            line-height: 1.75rem; }
+          .portfolio .slider__container .slider__wrapper .portfolio__content .portfolio__data .portfolio__description {
+            font-size: var(--base-font);
+            word-spacing: 0.25rem;
+            line-height: 1.75rem; }
+          .portfolio .slider__container .slider__wrapper .portfolio__content .portfolio__data .portfolio__actions {
+            margin-top: 1rem; }
+            .portfolio .slider__container .slider__wrapper .portfolio__content .portfolio__data .portfolio__actions a {
+              padding: 0.5rem 1rem;
+              font-size: var(--base-font); }
+  .slider__prev,
+  .slider__next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 0.25rem;
+    top: 16rem; }
   .specialization__container {
     grid-template-columns: max-content;
     justify-content: center; }
