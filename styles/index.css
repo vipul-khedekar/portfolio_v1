@@ -781,7 +781,29 @@ header {
     justify-content: center; }
   .specialization__content {
     width: 280px;
-    padding: 1rem 3.5rem 1.5rem 3rem; } }
+    padding: 1rem 3.5rem 1.5rem 3rem; }
+  .contact {
+    padding-top: 3.5rem;
+    margin-bottom: -8rem; }
+    .contact .page__title {
+      font-size: var(--larger-font);
+      padding-bottom: 2rem; }
+    .contact .contact__container .contact__form .contact__inputs .contact__content {
+      height: 60px;
+      padding: 0 1rem; }
+    .contact .contact__container .contact__form .contact__content-message {
+      height: 220px;
+      margin-bottom: 0.5rem; }
+    .contact .contact__container .contact__form .contact__button {
+      padding: 0.5rem 1rem;
+      font-weight: 700; }
+    .contact .contact__container .contact__form .contact__message {
+      font-size: var(--base-font); }
+  .contact__socials {
+    margin-top: 1rem; }
+    .contact__socials .contact__socials-links a img {
+      height: 40px;
+      width: 40px; } }
 
 @media screen and (min-width: 808px) {
   body {
