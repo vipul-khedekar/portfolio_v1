@@ -1012,6 +1012,27 @@ header {
     }
   }
 
+  .portfolio {
+    .page__title {
+      font-size: var(--larger-font);
+    }
+
+    .page__subtitle {
+      font-size: var(--small-font);
+    }
+
+    .slider__container {
+      .slider__wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 100%);
+
+        .portfolio__content {
+          width: 100vw;
+        }
+      }
+    }
+  }
+
   .specialization__container {
     grid-template-columns: max-content;
     justify-content: center;

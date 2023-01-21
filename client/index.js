@@ -71,7 +71,7 @@ if (sliderPrev) {
 //next slide
 if (sliderNext) {
   sliderNext.addEventListener(`click`, () => {
-    if (counter >= 4) {
+    if (counter >= 3) {
       return;
     }
     sliderWrapper.style.transition = `transform 0.4s ease-in-out`;

@@ -727,6 +727,15 @@ header {
     word-spacing: 0.125rem; }
   .skillset .skillset__content .skillset__download .skillset__button-download {
     font-size: var(--base-font); }
+  .portfolio .page__title {
+    font-size: var(--larger-font); }
+  .portfolio .page__subtitle {
+    font-size: var(--small-font); }
+  .portfolio .slider__container .slider__wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 100%); }
+    .portfolio .slider__container .slider__wrapper .portfolio__content {
+      width: 100vw; }
   .specialization__container {
     grid-template-columns: max-content;
     justify-content: center; }
