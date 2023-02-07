@@ -698,7 +698,7 @@ header {
       .home__container .home__data .home__quicknav {
         padding: 0.5rem 0; }
         .home__container .home__data .home__quicknav .home__button {
-          font-size: 0.98rem; }
+          font-size: var(--base-font); }
   .home__scroll-name {
     padding-left: 0.25rem;
     font-size: var(--small-font); }

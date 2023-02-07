@@ -952,7 +952,7 @@ header {
         padding: 0.5rem 0;
 
         .home__button {
-          font-size: 0.98rem;
+          font-size: var(--base-font);
         }
       }
     }
