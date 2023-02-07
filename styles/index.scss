@@ -951,8 +951,8 @@ header {
       .home__quicknav {
         padding: 0.5rem 0;
 
-        a {
-          font-size: var(--base-font);
+        .home__button {
+          font-size: 0.98rem;
         }
       }
     }
